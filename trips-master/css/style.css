@@ -1868,35 +1868,48 @@ h5,
 }
 
 .gallery-carousel img {
-  height: 400px; /* Adjust the height of the images */
-  object-fit: cover; /* Ensures the image fits within the specified height */
-  width: 200%; /* Ensures the image spans the full width of its container */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  height: 400px;
+  /* Adjust the height of the images */
+  object-fit: cover;
+  /* Ensures the image fits within the specified height */
+  width: 200%;
+  /* Ensures the image spans the full width of its container */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effect */
 }
 
 .gallery-carousel img:hover {
-  transform: scale(1.1); /* Slightly enlarge the image on hover */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge the image on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  /* Add a shadow effect on hover */
 }
 
 .owl-carousel .gallery-item {
-  padding: 10px; /* Adds spacing between items */
+  padding: 10px;
+  /* Adds spacing between items */
 }
 
 .owl-carousel .gallery-item img {
   display: block;
-  margin: 0 auto; /* Center the images */
+  margin: 0 auto;
+  /* Center the images */
 }
+
 .gallery-container {
-  width: 100%; /* Utilize the full width of the screen */
-  padding: 0; /* Remove any padding around the container */
-  margin: 0 auto; /* Center the container */
+  width: 100%;
+  /* Utilize the full width of the screen */
+  padding: 0;
+  /* Remove any padding around the container */
+  margin: 0 auto;
+  /* Center the container */
 }
 
 /* filepath: c:\Users\DELL\Desktop\trips-master\css\style.css */
 /* Remove custom black dot styles */
 .owl-carousel .owl-dots .owl-dot {
-  background: none; /* Reset background */
+  background: none;
+  /* Reset background */
 }
 
 /* Restore default orange dots */
@@ -1905,36 +1918,48 @@ h5,
   width: 7px;
   height: 7px;
   border-radius: 4px;
-  background: rgba(239, 186, 108, 0.4); /* Default orange dot color */
+  background: rgba(239, 186, 108, 0.4);
+  /* Default orange dot color */
   margin: 3px;
 }
 
 .slide-one-item .owl-dots .owl-dot.active>span {
   width: 20px;
-  background: #efba6c; /* Active orange dot color */
+  background: #efba6c;
+  /* Active orange dot color */
 }
 
 .gallery-container .gallery-carousel {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping of items */
-  justify-content: space-between; /* Add space between items */
+  flex-wrap: wrap;
+  /* Allow wrapping of items */
+  justify-content: space-between;
+  /* Add space between items */
 }
 
 .gallery-container .gallery-item {
-  flex: 0 0 19%; /* Each item takes 19% of the row width (5 items per row with spacing) */
-  margin-bottom: 20px; /* Add spacing between rows */
+  flex: 0 0 19%;
+  /* Each item takes 19% of the row width (5 items per row with spacing) */
+  margin-bottom: 20px;
+  /* Add spacing between rows */
 }
 
 .gallery-container .gallery-item img {
-  width: 100%; /* Ensure the image spans the full width of its container */
-  height: 450px; /* Adjust the height of the images */
-  object-fit: cover; /* Ensure the image fits within the specified height */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  width: 100%;
+  /* Ensure the image spans the full width of its container */
+  height: 450px;
+  /* Adjust the height of the images */
+  object-fit: cover;
+  /* Ensure the image fits within the specified height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effect */
 }
 
 .gallery-container .gallery-item img:hover {
-  transform: scale(1.1); /* Slightly enlarge the image on hover */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge the image on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  /* Add a shadow effect on hover */
 }
 
 .blog-entry .blog-thumbnail {
@@ -2767,7 +2792,7 @@ h5,
   float: right;
 }
 
-#fh5co-primary-menu > li > .sf-with-ul:after {
+#fh5co-primary-menu>li>.sf-with-ul:after {
   border: none !important;
   font-family: 'themify';
   speak: none;
@@ -2786,16 +2811,21 @@ h5,
   content: "\e64b";
   color: rgba(255, 255, 255, 0.4);
 }
-#fh5co-primary-menu > li > .sf-with-ul:hover:after, #fh5co-primary-menu > li > .sf-with-ul:focus:after {
+
+#fh5co-primary-menu>li>.sf-with-ul:hover:after,
+#fh5co-primary-menu>li>.sf-with-ul:focus:after {
   color: #fff !important;
 }
-#fh5co-primary-menu > li > .sf-with-ul.active:after {
+
+#fh5co-primary-menu>li>.sf-with-ul.active:after {
   color: white;
 }
-#fh5co-primary-menu > li > ul li {
+
+#fh5co-primary-menu>li>ul li {
   position: relative;
 }
-#fh5co-primary-menu > li > ul li > .sf-with-ul:after {
+
+#fh5co-primary-menu>li>ul li>.sf-with-ul:after {
   border: none !important;
   font-family: 'themify';
   speak: none;
@@ -2828,6 +2858,7 @@ h5,
   -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
+
 #fh5co-primary-menu .fh5co-sub-menu:after {
   position: absolute;
   top: -8px;
@@ -2839,10 +2870,12 @@ h5,
   border-left: 8px solid transparent;
   content: '';
 }
-#fh5co-primary-menu .fh5co-sub-menu > li > .fh5co-sub-menu {
+
+#fh5co-primary-menu .fh5co-sub-menu>li>.fh5co-sub-menu {
   left: 103%;
 }
-#fh5co-primary-menu .fh5co-sub-menu > li > .fh5co-sub-menu:after {
+
+#fh5co-primary-menu .fh5co-sub-menu>li>.fh5co-sub-menu:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -2862,6 +2895,7 @@ h5,
   -o-box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.09);
   box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.09);
 }
+
 .site-header.has-image #primary-menu .sub-menu:before {
   display: none;
 }
@@ -2875,6 +2909,7 @@ h5,
   text-transform: none;
   background: none;
 }
+
 #fh5co-primary-menu .fh5co-sub-menu a:hover {
   color: #f8e69f !important;
   background: none !important;
@@ -2894,21 +2929,26 @@ h5,
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
 }
+
 #fh5co-hero .btn {
   font-size: 24px;
 }
+
 #fh5co-hero .btn.btn-primary {
   padding: 14px 30px !important;
 }
+
 #fh5co-hero .flexslider {
   border: none;
   z-index: 1;
   margin-bottom: 0;
-} 
+}
+
 #fh5co-hero .flexslider .slides {
   position: relative;
   overflow: hidden;
 }
+
 #fh5co-hero .flexslider .slides li {
   background-repeat: no-repeat;
   background-size: cover;
@@ -2916,6 +2956,7 @@ h5,
   min-height: 700px;
   position: relative;
 }
+
 #fh5co-hero .flexslider .slides li:after {
   position: absolute;
   top: 0;
@@ -2926,6 +2967,7 @@ h5,
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
+
 #fh5co-hero .flexslider .flex-control-nav {
   bottom: 60px;
   z-index: 1000;
@@ -2933,11 +2975,13 @@ h5,
   width: 25px;
   float: right;
 }
+
 #fh5co-hero .flexslider .flex-control-nav li {
   display: block !important;
   margin-bottom: 20px;
   float: right;
 }
+
 #fh5co-hero .flexslider .flex-control-nav li a {
   display: block !important;
   background: rgba(255, 255, 255, 0.4);
@@ -2947,15 +2991,19 @@ h5,
   cursor: pointer;
   border: 2px solid transparent;
 }
-#fh5co-hero .flexslider .flex-control-nav li a:active, #fh5co-hero .flexslider .flex-control-nav li a:focus {
+
+#fh5co-hero .flexslider .flex-control-nav li a:active,
+#fh5co-hero .flexslider .flex-control-nav li a:focus {
   outline: none;
   border: 2px solid white !important;
 }
+
 #fh5co-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
   border: 2px solid white;
   background: transparent;
 }
+
 #fh5co-hero .flexslider .flex-direction-nav {
   display: none;
 }
@@ -2963,23 +3011,27 @@ h5,
 /* Style dots */
 .flexslider .flex-control-nav {
   position: absolute;
-  bottom: 20px; /* Adjust vertical position */
+  bottom: 20px;
+  /* Adjust vertical position */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px; /* Space between dots */
+  gap: 10px;
+  /* Space between dots */
 }
 
 .flexslider .flex-control-nav li a {
   width: 12px;
   height: 12px;
-  background: #ccc; /* Default dot color */
+  background: #ccc;
+  /* Default dot color */
   border-radius: 50%;
   display: inline-block;
 }
 
 .flexslider .flex-control-nav li a.flex-active {
-  background: #000; /* Active dot color */
+  background: #000;
+  /* Active dot color */
 }
 
 .slider-text {
@@ -2989,36 +3041,42 @@ h5,
   min-height: 700px;
   width: 100%;
 }
-.slider-text > .slider-text-inner {
+
+.slider-text>.slider-text-inner {
   display: table-cell;
   vertical-align: middle;
   min-height: 700px;
   position: relative;
 }
-.slider-text > .slider-text-inner h2 {
+
+.slider-text>.slider-text-inner h2 {
   font-size: 50px;
   font-weight: 400;
   color: #fff;
   line-height: 60px;
 }
+
 @media screen and (max-width: 768px) {
-  .slider-text > .slider-text-inner h2 {
+  .slider-text>.slider-text-inner h2 {
     font-size: 24px;
   }
 }
-.slider-text > .slider-text-inner p {
+
+.slider-text>.slider-text-inner p {
   margin-bottom: 30px;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   padding: 7px 0;
 }
-.slider-text > .slider-text-inner p > span {
+
+.slider-text>.slider-text-inner p>span {
   text-transform: uppercase;
   letter-spacing: 5px;
   border-top: 2px solid rgba(255, 255, 255, 0.3);
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
-.slider-text > .slider-text-inner p .btn {
+
+.slider-text>.slider-text-inner p .btn {
   font-size: 22px !important;
   bordeR: 1px solid transparent;
   -webkit-border-radius: 30px;
@@ -3026,7 +3084,8 @@ h5,
   -ms-border-radius: 30px;
   border-radius: 30px;
 }
-.slider-text > .slider-text-inner p .btn:hover {
+
+.slider-text>.slider-text-inner p .btn:hover {
   color: #fff !important;
 }
 
@@ -3038,28 +3097,44 @@ div.cs-select span {
   font-size: 16px;
   color: #fff;
 }
+
 @media screen and (max-width: 829px) {
   .cs-skin-border {
     max-width: 829px !important;
   }
 }
+
 @media screen and (max-width: 30em) {
   .cs-skin-border {
     font-size: 16px;
   }
 }
-.cs-skin-border > span {
+
+.cs-skin-border>span {
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
-.cs-skin-border > span::after {
-  font-size: 14px !important;
-}
-.cs-skin-border .cs-selected > span::after {
+
+.cs-skin-border>span::after {
   font-size: 14px !important;
 }
 
-/* Reduce space above the Interesting Gallery section */
+.cs-skin-border .cs-selected>span::after {
+  font-size: 14px !important;
+}
+
+/* Ensure no extra space below Hotel Facilities */
+#hotel-facilities {
+  margin-bottom: -400px;
+  padding-bottom: 0%;
+}
+
+/* Ensure no extra space above the Gallery section */
 #gallery {
-  margin-top: 1px;
-  /* Adjust the value as needed */
+  margin-bottom: -100px;
+  padding-top: 0px;
+}
+
+#team {
+  margin-bottom: -100px;
+  padding-top: 0px;
 }
