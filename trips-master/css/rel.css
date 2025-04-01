@@ -1,0 +1,154 @@
+/* Add more space below the Journey section */
+#journey {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    /* Adjust the value as needed */
+}
+
+/* Add more space above the Hotel Facilities section */
+#hotel-facilities {
+    margin-top: 10px;
+    margin-bottom: 1%;
+    /* Adjust the value as needed */
+}
+
+
+#hotel-facilities #hotel-facilities {
+    float: left;
+    width: 100%;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* filepath: c:\Users\DELL\Desktop\trips-master\css\style.css */
+#hotel-facilities .tab-content-container {
+    position: relative;
+    overflow: hidden;
+    min-height: 100px;
+    /* Adjust based on your content */
+}
+
+#hotel-facilities .tab-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#hotel-facilities .tab-content.active.show {
+    display: block;
+    position: relative;
+}
+
+
+#tabs {
+    float: left;
+    width: 100%;
+}
+
+#tabs .tabs-nav {
+    border-bottom: 1px solid #f0f0f0;
+    float: left;
+    width: 100%;
+}
+
+#tabs .tabs-nav>a {
+    float: left;
+    width: 16.666667%;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ccc;
+    padding: 10px 0 40px 0;
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#tabs .tabs-nav>a>.icon {
+    margin-bottom: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#tabs .tabs-nav>a>.icon:before {
+    font-size: 40px;
+}
+
+#tabs .tabs-nav>a>.icon,
+#tabs .tabs-nav>a>span {
+    display: block;
+}
+
+#tabs .tabs-nav>a>span {
+    font-weight: 700;
+}
+
+#tabs .tabs-nav>a.active {
+    color: #FF5722;
+    border-bottom: 1px solid #FF5722;
+}
+
+#tabs .tabs-nav>a.active .icon {
+    color: #FF5722;
+}
+
+#tabs .tabs-nav>a:hover {
+    text-decoration: none;
+    color: #FF5722;
+}
+
+#tabs .tabs-nav>a:hover .icon {
+    color: #FF5722;
+}
+
+#tabs .tabs-nav>a:focus,
+#tabs .tabs-nav>a:active {
+    outline: none;
+    text-decoration: none !important;
+}
+
+#tabs .tabs-nav>a:focus>.icon,
+#tabs .tabs-nav>a:focus>span,
+#tabs .tabs-nav>a:active>.icon,
+#tabs .tabs-nav>a:active>span {
+    text-decoration: none !important;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+
+#tabs .tab-content-container {
+    position: relative;
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+}
+
+#tabs .tab-content-container .tab-content {
+    position: absolute;
+    width: 100%;
+    float: left;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#tabs .tab-content-container .tab-content.show {
+    opacity: 1;
+}
