@@ -5,11 +5,9 @@
 
 .listing-image {
   width: 100%;
-  /* Ensures the container takes up the full width */
   height: 500px;
-  /* Set a fixed height for uniformity */
   overflow: hidden;
-  /* Ensures images don't overflow the container */
+  position: relative;
 }
 
 .listing-image img {
@@ -19,34 +17,32 @@
 }
 
 .tabs {
-    margin-bottom: 20px;
-    text-align: center;
-  }
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-  .tab-button {
-    background-color: #f1f1f1;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 5px;
-    font-size: 16px;
-  }
+.tab-button {
+  background-color: #f7f587;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+}
 
-  .tab-button.active {
-    background-color: #007bff;
-    color: white;
-  }
+.tab-button.active {
+  background-color: #c8b934;
+  color: white;
+}
 
-  .tab-button:hover {
-    background-color: #ddd;
-  }
+.tab-button:hover {
+  background-color: #ddd;
+}
 
-  .listing-item {
-    display: none; /* Hide all items by default */
-  }
+.listing-item {
+  display: none; /* Hide all items by default */
+}
 
-  .listing-item.show {
-    display: block; /* Show filtered items */
-  }
-
-  
+.listing-item.show {
+  display: block; /* Show filtered items */
+}
