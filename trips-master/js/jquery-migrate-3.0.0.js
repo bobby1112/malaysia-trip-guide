@@ -1,7 +1,7 @@
 /*!
  * jQuery Migrate - v3.0.0 - 2016-06-09
  * Copyright jQuery Foundation and other contributors
- */
+ 
 (function( jQuery, window ) {
 "use strict";
 
@@ -496,7 +496,7 @@ jQuery.Deferred = function( func ) {
 	var deferred = oldDeferred(),
 		promise = deferred.promise();
 
-	deferred.pipe = promise.pipe = function( /* fnDone, fnFail, fnProgress */ ) {
+	deferred.pipe = promise.pipe = function( /* fnDone, fnFail, fnProgress */ /*) {
 		var fns = arguments;
 
 		migrateWarn( "deferred.pipe() is deprecated" );
@@ -537,4 +537,4 @@ jQuery.Deferred = function( func ) {
 
 
 
-})( jQuery, window );
+})( jQuery, window );*/
