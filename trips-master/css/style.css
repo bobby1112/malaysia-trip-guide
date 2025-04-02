@@ -3122,11 +3122,6 @@ div.cs-select span {
   font-size: 14px !important;
 }
 
-/* Ensure no extra space below Hotel Facilities */
-#hotel-facilities {
-  margin-bottom: -400px;
-  padding-bottom: 0%;
-}
 
 /* Ensure no extra space above the Gallery section */
 #gallery {
