@@ -3133,3 +3133,29 @@ div.cs-select span {
   margin-bottom: -100px;
   padding-top: 0px;
 }
+
+.ftco-blocks-cover-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.site-section-cover.overlay {
+  min-height: 100vh;
+  position: relative;
+}
+
+.video-container {
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.position-relative {
+  z-index: 1; /* Ensure text stays above video */
+}
+
+/* Remove default Bootstrap container padding */
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
