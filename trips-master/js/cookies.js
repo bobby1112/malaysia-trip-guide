@@ -61,6 +61,9 @@ document.querySelector('form').addEventListener('submit', function(e) {
     setCookie("Lastname", lastName, 7);
     setCookie("Email", email, 7)
 
+    //remove the session storage when message was send successfully
+    sessionStorage.removeItem('message');
+
     // Show success message and reset form
     alert(`Thank you for your message, ${lastName}! We will get back to you soon.`);
     this.reset();
@@ -94,4 +97,18 @@ window.onload = function (){
     document.getElementById('firstname').value = getCookie('Name') || '';
     document.getElementById('lastname').value = getCookie('Lastname') || '';
     document.getElementById('email').value = getCookie('Email') || '';
+
+    // Restore feedback on page reload
+    let tempMessage = sessionStorage.getItem('message');
+    if (tempMessage) {
+        document.getElementById('message').value = tempMessage;
+    }
 };
+
+
+// store feedback on session storage
+document.getElementById('message').addEventListener('input', function() {
+    sessionStorage.setItem('message', this.value);
+});
+
+
