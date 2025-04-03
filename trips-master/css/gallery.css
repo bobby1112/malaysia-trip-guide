@@ -10,17 +10,14 @@
 }
 
 .listing-image {
-  width: 100%;
-  height: 330px;
-  overflow: hidden;
-  position: relative;
+  height: 450px; /* or any fixed height */
 }
 
 .listing-image img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  height: 100%;
 }
+
 #tabs{
   display: flex;
   justify-content: center;
@@ -88,6 +85,9 @@ body .container{
   align-items: center;
   margin-top: -130px;
 }
+
+
+
 
 .listing-item {
   display: none; /* Hide all items by default */
