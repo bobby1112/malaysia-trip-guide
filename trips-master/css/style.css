@@ -626,6 +626,12 @@ h5,
   background: white;
 }
 
+.site-navbar .container {
+  overflow-x: visible;
+  flex-wrap: wrap;
+}
+
+
 @media (max-width: 991.98px) {
   .site-navbar {
     padding-top: 3rem;
@@ -3158,4 +3164,17 @@ div.cs-select span {
 .container {
   padding-left: 0;
   padding-right: 0;
+}
+
+#hotel-facilities{
+  margin-top: 150px;
+  margin-bottom: -200px;
+}
+
+#section{
+  margin-top: 1000px;
+}
+
+#section1{
+  margin-top: 0%;
 }

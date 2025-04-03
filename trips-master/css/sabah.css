@@ -1,0 +1,36 @@
+.image-stack img {
+  width: 170%;
+  height: auto;
+  max-width: none;
+}
+
+@media (max-width: 768px) {
+  .image-stack img {
+    width: 100%;
+  }
+}
+
+.location-logo {
+  position: absolute;
+  top: 60%;
+  left: 155%;
+  width: 40px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.map-logo {
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  width: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+#intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
