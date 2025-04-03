@@ -56,6 +56,12 @@ document.querySelector('form').addEventListener('submit', function(e) {
         return;
     }
 
+    if (message === "") {
+        alert("Please write a message before sending, don't leave it blank.");
+        document.getElementById('message').focus();
+        return;
+    }
+
     // Set cookies
     setCookie("Name", firstName, 7);
     setCookie("Lastname", lastName, 7);
