@@ -18,6 +18,5 @@ function filterImages(category) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    filterImages('all'); // Show ALL items first to calculate layout
-    setTimeout(() => filterImages('top-places'), 50); // Then switch to 'top-places'
+    filterImages('top-places'); // Show ALL items first to calculate layout
 });

@@ -67,7 +67,7 @@
       </div>
 
     </header>
-    <div class="ftco-blocks-cover-1">
+    <div class="ftco-blocks-cover-1" id = "gallery-title">
       <div class="site-section-cover overlay" style="background-image: url('images/Gallery/Gallery_Background.png')">
         <div class="container">
           <div class="row align-items-center">
@@ -97,7 +97,7 @@
           </div>
           <!--/////////////////////////////////////////////////////////////////Tab///////////////////////////////////////////////////////////////-->
 
-          <div class="tabs">
+          <div class="tabs" id="tabs">
             <button class="tab-button active" onclick="filterImages('top-places')">Top Places</button>
             <button class="tab-button" onclick="filterImages('food')">Food</button>
             <button class="tab-button" onclick="filterImages('species')">Species</button>
@@ -105,8 +105,9 @@
             <button class="tab-button" onclick="filterImages('island')">Island</button>
           </div>
 
-          <!--Top Plces-->
-          <div class="row">
+          <!--Top Places-->
+          <div class="row px-2 mt-4 gap-3" id="gallery-images">
+            
             <div class="col-lg-5 col-md-6 mb-4">
               <div class="listing-item" data-category="top-places">
                 <div class="listing-image">
@@ -247,312 +248,327 @@
 
 
             <!--Food-->
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/nasilemak.png" alt="Nasi Lemak" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Nasi Lemak</u></b> is Malaysia’s national dish, featuring coconut milk rice, sambal, fried
-                      anchovies, boiled egg, peanuts, and cucumber slices, often served with chicken or beef rendang.
-                    </p>
+            <div id="foods">
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/nasilemak.png" alt="Nasi Lemak" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Nasi Lemak</u></b> is Malaysia’s national dish, featuring coconut milk rice, sambal,
+                        fried
+                        anchovies, boiled egg, peanuts, and cucumber slices, often served with chicken or beef rendang.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/nasilemak.png">Nasi Lemak</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/nasilemak.png">Nasi Lemak</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/abc.png" alt="ABC" class="img-fluid">
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/abc.png" alt="ABC" class="img-fluid">
 
-                  <div class="content">
-                    <p><b><u>ABC</u></b> or Ais Batu Campur is a popular Malaysian dessert made from shaved ice topped
-                      with red beans, sweet corn, jelly, condensed milk, and colorful syrup.</p>
+                    <div class="content">
+                      <p><b><u>ABC</u></b> or Ais Batu Campur is a popular Malaysian dessert made from shaved ice topped
+                        with red beans, sweet corn, jelly, condensed milk, and colorful syrup.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/abc.png">ABC</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/abc.png">ABC</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/hainan_chickenrice.png" alt="Hainanese Chicken Rice" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Hainanese Chicken Rice</u></b> is a fragrant rice dish served with poached chicken, garlic
-                      chili sauce, and soy sauce, beloved across Malaysia for its simplicity and flavor.</p>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/hainan_chickenrice.png" alt="Hainanese Chicken Rice"
+                      class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Hainanese Chicken Rice</u></b> is a fragrant rice dish served with poached chicken,
+                        garlic
+                        chili sauce, and soy sauce, beloved across Malaysia for its simplicity and flavor.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/hainan_chickenrice.png">Hainanese Chicken Rice</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/hainan_chickenrice.png">Hainanese Chicken Rice</a>
+                    </h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/ketupat.png" alt="Ketupat" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Ketupat</u></b> is a traditional rice cake wrapped in woven palm leaves, commonly enjoyed
-                      during Hari Raya and served with rendang or satay.</p>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/ketupat.png" alt="Ketupat" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Ketupat</u></b> is a traditional rice cake wrapped in woven palm leaves, commonly enjoyed
+                        during Hari Raya and served with rendang or satay.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/ketupat.png">Ketupat</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/ketupat.png">Ketupat</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/meerojak.png" alt="Mee Rojak" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Mee Rojak</u></b> is a spicy-sweet noodle salad made with tofu, hard-boiled eggs, cucumber,
-                      and prawn fritters, topped with thick peanut sauce.</p>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/meerojak.png" alt="Mee Rojak" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Mee Rojak</u></b> is a spicy-sweet noodle salad made with tofu, hard-boiled eggs,
+                        cucumber,
+                        and prawn fritters, topped with thick peanut sauce.</p>
+                    </div>
+
                   </div>
-
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/meerojak.png">Mee Rojak</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/meerojak.png">Mee Rojak</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="col-lg-7 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/kueyteow.png" alt="Char Kuey Teow" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Char Kuey Teow</u></b> is a stir-fried noodle dish with flat rice noodles, prawns, Chinese
-                      sausage, bean sprouts, and eggs cooked over high heat with soy sauce.</p>
+              <div class="col-lg-7 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/kueyteow.png" alt="Char Kuey Teow" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Char Kuey Teow</u></b> is a stir-fried noodle dish with flat rice noodles, prawns,
+                        Chinese
+                        sausage, bean sprouts, and eggs cooked over high heat with soy sauce.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/kueyteow.png">Char Kuey Teow</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/kueyteow.png">Char Kuey Teow</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-5 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/laksa.png" alt="Laksa" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Laksa</u></b> is a spicy noodle soup with a coconut milk or tamarind base, commonly made
-                      with fish or chicken and garnished with herbs and lime.</p>
+              <div class="col-lg-5 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/laksa.png" alt="Laksa" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Laksa</u></b> is a spicy noodle soup with a coconut milk or tamarind base, commonly made
+                        with fish or chicken and garnished with herbs and lime.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/laksa.png">Laksa</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/laksa.png">Laksa</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="col-lg-5 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/murtabak.png" alt="Murtabak" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Murtabak</u></b> is a stuffed pan-fried bread filled with minced meat, onions, and egg,
-                      often served with curry or pickled onions.</p>
+              <div class="col-lg-5 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/murtabak.png" alt="Murtabak" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Murtabak</u></b> is a stuffed pan-fried bread filled with minced meat, onions, and egg,
+                        often served with curry or pickled onions.</p>
+                    </div>
+
                   </div>
-
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/murtabak.png">Murtabak</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/murtabak.png">Murtabak</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-7 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/roticanai.png" alt="Roti Canai" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Roti Canai</u></b> is a flaky, crispy flatbread served with dhal or curry, a breakfast
-                      staple and street food favorite in Malaysia.</p>
+              <div class="col-lg-7 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/roticanai.png" alt="Roti Canai" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Roti Canai</u></b> is a flaky, crispy flatbread served with dhal or curry, a breakfast
+                        staple and street food favorite in Malaysia.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/roticanai.png">Roti Canai</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/roticanai.png">Roti Canai</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/cendol.png" alt="Rendang" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Cendol</u></b> is a cold dessert made of pandan jelly noodles, coconut milk, palm sugar
-                      syrup, and shaved ice, perfect for hot days.</p>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/cendol.png" alt="Rendang" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Cendol</u></b> is a cold dessert made of pandan jelly noodles, coconut milk, palm sugar
+                        syrup, and shaved ice, perfect for hot days.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/cendol.png">Cendol</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/cendol.png">Cendol</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/rendang.png" alt="Rendang" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Rendang</u></b> is a rich, slow-cooked dry curry made with beef, coconut milk, and a blend
-                      of spices, traditionally served during festive occasions.</p>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/rendang.png" alt="Rendang" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Rendang</u></b> is a rich, slow-cooked dry curry made with beef, coconut milk, and a
+                        blend
+                        of spices, traditionally served during festive occasions.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/rendang.png">Rendang</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/rendang.png">Rendang</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/roti john.png" alt="Roti John" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Roti John</u></b> is a Malaysian street food sandwich filled with egg, minced meat, onions,
-                      and drizzled with spicy sauces and mayonnaise.</p>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/roti john.png" alt="Roti John" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Roti John</u></b> is a Malaysian street food sandwich filled with egg, minced meat,
+                        onions,
+                        and drizzled with spicy sauces and mayonnaise.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/roti john.png">Roti John</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/roti john.png">Roti John</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/nasikerabu.png" alt="Nasi Kerabu" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Nasi Kerabu</u></b> is a blue-colored rice dish made with butterfly pea flower, served with
-                      herbs, fish or meat, and spicy sambal.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/nasikerabu.png" alt="Nasi Kerabu" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Nasi Kerabu</u></b> is a blue-colored rice dish made with butterfly pea flower, served
+                        with
+                        herbs, fish or meat, and spicy sambal.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/nasikerabu.png">Nasi Kerabu</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/nasikerabu.png">Nasi Kerabu</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="food">
-                <div class="listing-image">
-                  <img src="images/Gallery/Food/satay.png" alt="Rendang" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Satay</u></b> is skewered and grilled meat, typically chicken or beef, served with spicy
-                      peanut sauce, ketupat, and cucumber slices.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="food">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Food/satay.png" alt="Rendang" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Satay</u></b> is skewered and grilled meat, typically chicken or beef, served with spicy
+                        peanut sauce, ketupat, and cucumber slices.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Food/satay.png">Satay</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Food/satay.png">Satay</a></h2>
+                  </div>
                 </div>
               </div>
             </div>
 
 
             <!--Festival-->
+            <div id="festivals">
 
-            <div class="col-lg-7 col-md-6 mb-4">
-              <div class="listing-item" data-category="festival">
-                <div class="listing-image">
-                  <img src="images/Gallery/Festival/CNY.png" alt="Chinese New Year" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Chinese New Year</u></b> is a vibrant celebration marked by lion dances, red decorations,
-                      fireworks, and family reunions to welcome the Lunar New Year.</p>
+
+
+              <div class="col-lg-7 col-md-6 mb-4">
+                <div class="listing-item" data-category="festival">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Festival/CNY.png" alt="Chinese New Year" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Chinese New Year</u></b> is a vibrant celebration marked by lion dances, red decorations,
+                        fireworks, and family reunions to welcome the Lunar New Year.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Festival/CNY.png">Chinese New Year</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Festival/CNY.png">Chinese New Year</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-5 col-md-6 mb-4">
-              <div class="listing-item" data-category="festival">
-                <div class="listing-image">
-                  <img src="images/Gallery/Festival/hariraya.png" alt="Hari Raya Aidilfitri" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Hari Raya Aidilfitri</u></b> is the Muslim festival celebrating the end of Ramadan,
-                      featuring festive prayers, open houses, traditional food, and family gatherings.</p>
+              <div class="col-lg-5 col-md-6 mb-4">
+                <div class="listing-item" data-category="festival">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Festival/hariraya.png" alt="Hari Raya Aidilfitri" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Hari Raya Aidilfitri</u></b> is the Muslim festival celebrating the end of Ramadan,
+                        featuring festive prayers, open houses, traditional food, and family gatherings.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Festival/hariraya.png">Hari Raya Aidilfitri</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Festival/hariraya.png">Hari Raya Aidilfitri</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="festival">
-                <div class="listing-image">
-                  <img src="images/Gallery/Festival/deepavali.png" alt="Deepavali" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Deepavali</u></b> or Diwali is the Hindu festival of lights, symbolizing the victory of
-                      light over darkness with oil lamps, prayers, and sweets.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="festival">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Festival/deepavali.png" alt="Deepavali" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Deepavali</u></b> or Diwali is the Hindu festival of lights, symbolizing the victory of
+                        light over darkness with oil lamps, prayers, and sweets.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Festival/deepavali.png">Deepavali</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Festival/deepavali.png">Deepavali</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="festival">
-                <div class="listing-image">
-                  <img src="images/Gallery/Festival/thaipusam.png" alt="Thaipusam" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Thaipusam</u></b> is a Hindu festival dedicated to Lord Murugan, known for its intense
-                      rituals and kavadi-carrying processions, especially at Batu Caves.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="festival">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Festival/thaipusam.png" alt="Thaipusam" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Thaipusam</u></b> is a Hindu festival dedicated to Lord Murugan, known for its intense
+                        rituals and kavadi-carrying processions, especially at Batu Caves.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Festival/thaipusam.png">Thaipusam</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Festival/thaipusam.png">Thaipusam</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="listing-item" data-category="festival">
-                <div class="listing-image">
-                  <img src="images/Gallery/Festival/midautumn.png" alt="Mid-Autumn" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Mid-Autumn</u></b> celebrates the full moon and harvest with mooncakes, lanterns, and
-                      cultural performances, popular among the Chinese community.</p>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="listing-item" data-category="festival">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Festival/midautumn.png" alt="Mid-Autumn" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Mid-Autumn</u></b> celebrates the full moon and harvest with mooncakes, lanterns, and
+                        cultural performances, popular among the Chinese community.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Festival/midautumn.png">Mid-Autumn</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Festival/midautumn.png">Mid-Autumn</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-8 col-md-6 mb-4">
-              <div class="listing-item" data-category="festival">
-                <div class="listing-image">
-                  <img src="images/Gallery/Festival/wesakday.png" alt="Wesak Day" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Wesak Day</u></b> commemorates the birth, enlightenment, and death of Buddha, marked with
-                      prayers, candlelit processions, and acts of charity.</p>
+              <div class="col-lg-8 col-md-6 mb-4">
+                <div class="listing-item" data-category="festival">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Festival/wesakday.png" alt="Wesak Day" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Wesak Day</u></b> commemorates the birth, enlightenment, and death of Buddha, marked with
+                        prayers, candlelit processions, and acts of charity.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Festival/wesakday.png">Wesak Day</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Festival/wesakday.png">Wesak Day</a></h2>
+                  </div>
                 </div>
               </div>
             </div>
@@ -560,236 +576,244 @@
 
 
             <!--Species-->
+            <div id="species">
 
 
-            <div class="col-lg-5 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
 
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/monkey.png" alt="Proboscis monkey" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Proboscis Monkey</u></b> is an endangered primate native to Borneo, known for its large
-                      nose and potbelly, often found near rivers and mangroves.</p>
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/monkey.png" alt="Proboscis monkey" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Proboscis Monkey</u></b> is an endangered primate native to Borneo, known for its large
+                        nose and potbelly, often found near rivers and mangroves.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/monkey.png">Proboscis Monkey</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/monkey.png">Proboscis Monkey</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-7 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/hornbill.png" alt="Hornbill" class="img-fluid">
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/hornbill.png" alt="Hornbill" class="img-fluid">
 
-                  <div class="content">
-                    <p><b><u>Hornbill</u></b> is a large bird with a curved bill and casque, considered a symbol of
-                      Sarawak and often seen in tropical forests of Malaysia.</p>
+                    <div class="content">
+                      <p><b><u>Hornbill</u></b> is a large bird with a curved bill and casque, considered a symbol of
+                        Sarawak and often seen in tropical forests of Malaysia.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/hornbill.png">Hornbill</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/hornbill.png">Hornbill</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-12 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/rhino.png" alt="Hornbill" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Sumatran Rhinoceros</u></b> is a critically endangered species, once native to Malaysia,
-                      known for its two horns and hairy body, now rarely seen in the wild.</p>
+              <div class="col-lg-12 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/rhino.png" alt="Hornbill" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Sumatran Rhinoceros</u></b> is a critically endangered species, once native to Malaysia,
+                        known for its two horns and hairy body, now rarely seen in the wild.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/rhino.png">Sumatran Rhinoceros</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/rhino.png">Sumatran Rhinoceros</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="col-lg-7 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/mousedeer.png" alt="Mousedeer" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Mousedeer</u></b> or "kancil" is a tiny, shy animal featured in local folklore, known for
-                      its speed and cleverness in dense tropical forests.</p>
+              <div class="col-lg-7 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/mousedeer.png" alt="Mousedeer" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Mousedeer</u></b> or "kancil" is a tiny, shy animal featured in local folklore, known for
+                        its speed and cleverness in dense tropical forests.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/mousedeer.png">Mousedeer</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/mousedeer.png">Mousedeer</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-5 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/orangutan.png" alt="Orang Utan" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Orang Utan</u></b> is a great ape found in Borneo, highly intelligent and endangered, known
-                      for its reddish-brown hair and tree-dwelling lifestyle.</p>
+              <div class="col-lg-5 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/orangutan.png" alt="Orang Utan" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Orang Utan</u></b> is a great ape found in Borneo, highly intelligent and endangered,
+                        known
+                        for its reddish-brown hair and tree-dwelling lifestyle.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/orangutan.png">Orang Utan</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/orangutan.png">Orang Utan</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-5 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/tapir.png" alt="Tapir" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Tapir</u></b> is a unique herbivore with a distinctive black-and-white body, native to
-                      Southeast Asian rainforests and crucial for seed dispersion.</p>
+              <div class="col-lg-5 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/tapir.png" alt="Tapir" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Tapir</u></b> is a unique herbivore with a distinctive black-and-white body, native to
+                        Southeast Asian rainforests and crucial for seed dispersion.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/tapir.png">Tapir</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/tapir.png">Tapir</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-7 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/tiger.png" alt="Malayan Tiger" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Malayan Tiger</u></b> is Malaysia’s national animal, a majestic and endangered predator
-                      found in tropical forests, facing threats from habitat loss.</p>
+              <div class="col-lg-7 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/tiger.png" alt="Malayan Tiger" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Malayan Tiger</u></b> is Malaysia’s national animal, a majestic and endangered predator
+                        found in tropical forests, facing threats from habitat loss.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/tiger.png">Malayan Tiger</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/tiger.png">Malayan Tiger</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
 
-            <div class="col-lg-7 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/rafflesia.png" alt="Rafflesia" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Rafflesia</u></b> is the world’s largest flower, known for its enormous size and foul odor,
-                      found in rainforests and famous for its rare blooming.</p>
+              <div class="col-lg-7 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/rafflesia.png" alt="Rafflesia" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Rafflesia</u></b> is the world’s largest flower, known for its enormous size and foul
+                        odor,
+                        found in rainforests and famous for its rare blooming.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/rafflesia.png">Rafflesia</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/rafflesia.png">Rafflesia</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-5 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/bougainvillea.png" alt="Bougainville" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Bougainville</u></b> is a colorful flowering plant with papery blooms in vibrant shades of
-                      pink, red, and purple, often used in tropical landscaping.</p>
+              <div class="col-lg-5 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/bougainvillea.png" alt="Bougainville" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Bougainville</u></b> is a colorful flowering plant with papery blooms in vibrant shades
+                        of
+                        pink, red, and purple, often used in tropical landscaping.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/bougainvillea.png">Bougainville</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/bougainvillea.png">Bougainville</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/Ixora.png" alt="Ixora" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Ixora</u></b> is a tropical shrub with clusters of small flowers in red, orange, or yellow,
-                      commonly planted in gardens across Malaysia.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/Ixora.png" alt="Ixora" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Ixora</u></b> is a tropical shrub with clusters of small flowers in red, orange, or
+                        yellow,
+                        commonly planted in gardens across Malaysia.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/Ixora.png">Ixora</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/Ixora.png">Ixora</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="species">
-                <div class="listing-image">
-                  <img src="images/Gallery/Species/orchid.png" alt="Orchid" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Orchid</u></b> is a delicate and elegant flower popular in Malaysia, known for its wide
-                      variety of species and symbolic beauty.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="species">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Species/orchid.png" alt="Orchid" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Orchid</u></b> is a delicate and elegant flower popular in Malaysia, known for its wide
+                        variety of species and symbolic beauty.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Species/orchid.png">Orchid</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Species/orchid.png">Orchid</a></h2>
+                  </div>
                 </div>
               </div>
             </div>
 
 
             <!--Island-->
+            <div id="islands">
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="island">
-                <div class="listing-image">
-                  <img src="images/Gallery/Island/pulauredang.png" alt="Redang Island" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Redang Island</u></b> is a crystal-clear beach destination in Terengganu, famous for
-                      snorkeling, scuba diving, and relaxing tropical scenery.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="island">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Island/pulauredang.png" alt="Redang Island" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Redang Island</u></b> is a crystal-clear beach destination in Terengganu, famous for
+                        snorkeling, scuba diving, and relaxing tropical scenery.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Island/pulauredang.png">Redang Island</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Island/pulauredang.png">Redang Island</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="island">
-                <div class="listing-image">
-                  <img src="images/Gallery/Island/pulaupangkor.png" alt="Pangkor Island" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Pangkor Island</u></b> is a peaceful island retreat with fishing villages, sandy beaches,
-                      and rich cultural heritage along Malaysia’s west coast.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="island">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Island/pulaupangkor.png" alt="Pangkor Island" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Pangkor Island</u></b> is a peaceful island retreat with fishing villages, sandy beaches,
+                        and rich cultural heritage along Malaysia’s west coast.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Island/pulaupangkor.png">Pangkor Island</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Island/pulaupangkor.png">Pangkor Island</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="island">
-                <div class="listing-image">
-                  <img src="images/Gallery/Island/pulautioman.png" alt="Tioman Island" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Tioman Island</u></b> is a stunning island in the South China Sea, known for its coral
-                      reefs, jungle trekking, and serene beaches.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="island">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Island/pulautioman.png" alt="Tioman Island" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Tioman Island</u></b> is a stunning island in the South China Sea, known for its coral
+                        reefs, jungle trekking, and serene beaches.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Island/pulautioman.png">Tioman Island</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Island/pulautioman.png">Tioman Island</a></h2>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 mb-4">
-              <div class="listing-item" data-category="island">
-                <div class="listing-image">
-                  <img src="images/Gallery/Island/pulaukapas.png" alt="Kapas Island" class="img-fluid">
-                  <div class="content">
-                    <p><b><u>Kapas Island</u></b> is a small, unspoiled island with white sandy beaches, turquoise
-                      waters, and excellent snorkeling close to the mainland.</p>
+              <div class="col-lg-6 col-md-6 mb-4">
+                <div class="listing-item" data-category="island">
+                  <div class="listing-image">
+                    <img src="images/Gallery/Island/pulaukapas.png" alt="Kapas Island" class="img-fluid">
+                    <div class="content">
+                      <p><b><u>Kapas Island</u></b> is a small, unspoiled island with white sandy beaches, turquoise
+                        waters, and excellent snorkeling close to the mainland.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="listing-item-content">
-                  <h2 class="mb-1"><a href="images/Gallery/Island/pulaukapas.png">Kapas Island</a></h2>
+                  <div class="listing-item-content">
+                    <h2 class="mb-1"><a href="images/Gallery/Island/pulaukapas.png">Kapas Island</a></h2>
+                  </div>
                 </div>
               </div>
             </div>
