@@ -2826,7 +2826,7 @@ h5,
   color: rgba(255, 255, 255, 0.4);
 }
 
-#fh5co-primary-menu>li>.sf-with-ul:hover:after,
+#fh5co-primary-menu>li>.sf-with-ul:hover:after
 #fh5co-primary-menu>li>.sf-with-ul:focus:after {
   color: #fff !important;
 }
