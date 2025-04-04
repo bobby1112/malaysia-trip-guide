@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">  
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/menu.css">
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -21,64 +22,69 @@
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-  <div class="site-wrap" id="home-section">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
       </div>
-      <div class="site-mobile-menu-body"></div>
     </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
 
-    <header class="site-navbar site-navbar-target" role="banner">
+  <nav class="site-nav mt-3">
+    <div class="container">
 
-      <div class="container">
-        <div class="row align-items-center position-relative">
-          <div class="col-3">
-            <div class="site-logo">
-              <a href="home.html" class="font-weight-bold">
-                <img src="images/logo.jpg" alt="Image" class="img-fluid">
-              </a>
-            </div>
+      <div class="site-navigation">
+        <div class="row align-item-center">
+          <div class="col-6 col-lg-6 text-start">
+            <a href="home.html" class="logo">Sterial
+              <!-- <img src="images/logo.png" alt="Image" class="img-fluid"> -->
+            </a>
           </div>
-
-          <div class="col-9  text-right">
-            <span class="d-inline-block d-lg-none"><a href="#"
-                class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span
-                  class="icon-menu h3 text-white"></span></a></span>
-
-            <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                <li><a href="home.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="trips.html" class="nav-link">Trips</a></li>
-                <li class="active"><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
+          <div class="col-lg-6 d-none d-lg-inline-block text-center nav-center-wrap">
+            <ul class="js-clone-nav  text-center site-menu p-0 m-0">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="has-children">
+                <a href="#">Trips</a>
+                <ul class="dropdown">
+                  <li><a href="penang.html">Penang</a></li>
+                  <li> <a href="perak.html">Perak</a> </li>
+                  <li class="active"><a href="Sabah.html">Sabah</a></li>
+                  <li><a href="#">Menu Three</a></li>
+                </ul>
+              </li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3 text-lg-end">
+            <a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+              data-toggle="collapse" data-target="#main-navbar">
+              <span></span>
+            </a>
           </div>
         </div>
       </div>
+    </div>
+  </nav>
+  <div class="hero overlay">
+    <div class="img-bg rellax">
+      <img src="images/kotakinabalu.jpg" alt="Image" class="img-fluid">
+    </div>
+    <div class="container">
+      <div class="row align-items-center justify-content-start">
+        <div class="col-lg-6 mx-auto text-center">
+          <h1 class="heading" data-aos="fade-up">Contact</h1>
+          <p data-aos="fade-up">A small river named Duden flows by their place and supplies it with the necessary
+            regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
     </header>
-    <div class="ftco-blocks-cover-1" id="gallery-title">
-      <div class="site-section-cover overlay" style="background-image: url('images/Gallery/Gallery_Background.png')">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-5" data-aos="fade-up">
-              <h1 class="mb-3 text-white">Our Gallery</h1>
-              <p>"A gallery is more than a space for art—it's a sanctuary of imagination, where every brushstroke and
-                photograph tells a silent story.
-                Here, time slows, thoughts awaken, and beauty speaks in colors and forms.
-                It's where emotion lingers on every wall, inviting the viewer to feel, reflect, and connect."</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div id=gallery>
       <div class="site-section">
         <div class="container">
