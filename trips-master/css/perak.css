@@ -1,0 +1,152 @@
+.site-section-cover {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.site-section-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+/* Circle shape for left and right buttons */
+.carousel-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 50%; /* Make the button circular */
+  transition: all 2s ease; /* Smooth transition for scaling */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left button */
+.carousel-btn#prev {
+  left: 10px;
+}
+
+/* Right button */
+.carousel-btn#next {
+  right: 10px;
+}
+
+/* Hover effect - enlarge and change background color */
+.carousel-btn:hover {
+  background-color: #FF0000; /* Red background on hover */
+  transform: translateY(-50%) scale(1.2); /* Enlarge button on hover */
+}
+
+/* Active (clicked) effect - scale up and stay red */
+.carousel-btn:active {
+  transform: translateY(-50%) scale(1.3); /* Slightly larger when clicked */
+  background-color: #FF0000; /* Keep it red when clicked */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  z-index: 2; /* Ensure overlay content stays on top */
+  padding: 20px; /* Add padding to prevent content from overlapping */
+}
+
+.visit-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 2;
+  transition: all 5s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.visit-btn:hover {
+  background-color: #FFDC00;
+  transform: scale(1.1);
+}
+
+.visit-btn i {
+  margin-left: 10px;
+  transition: margin-left 0.3s ease;
+}
+
+.visit-btn:hover i {
+  margin-left: 15px;
+}
+
+/* New Arrow for button */
+.visit-btn i.arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.visit-btn:hover i.arrow {
+  transform: translateX(10px); /* Move arrow slightly when hovered */
+}
+
+/* Carousel Dots */
+.carousel-dots-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  z-index: 2;
+}
+
+.carousel-dots-container .dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+/* Hover effect for dots */
+.carousel-dots-container .dot:hover {
+  background-color: #FF0000;
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Active dot styling */
+.carousel-dots-container .dot.active {
+  background-color: #FFFFFF; /* White color for active dot */
+  width: 18px; /* Larger dot when active */
+  height: 18px; /* Larger dot when active */
+  opacity: 1; /* Full opacity for active dot */
+}
