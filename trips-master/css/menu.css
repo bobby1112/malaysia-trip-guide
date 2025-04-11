@@ -10,7 +10,7 @@
 
 .site-nav {
   background-color: rgb(131, 157, 173);
-  position: fixed;
+  position: absolute;
   top: -17px;
   z-index: 10000;
   width: 100%;
@@ -294,7 +294,8 @@
   overflow: hidden;
   -o-object-fit: cover;
   object-fit: cover;
-
+  height: 700px;
+  margin-top: 85px;
 }
 
 .hero img {
@@ -304,6 +305,7 @@
   -ms-transform: scale(1.2) translate(5%, -5%);
   transform: scale(1.2) translate(5%, -5%);
 }
+
 
 .hero .img-bg {
   position: absolute;
@@ -535,11 +537,10 @@
   .site-nav {
     position: absolute !important;
     /* Force absolute positioning on small screens */
-    top: 0 !important;
+    top: -17px !important;
     left: 0;
     width: 100%;
-    background-color: transparent;
-    /* or desired background */
+    background-color: rgb(131, 157, 173); /* Ensure the color remains consistent */
   }
 
   .sticky-wrapper,
