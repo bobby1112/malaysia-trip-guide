@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="fonts/icomoon/style.css">
-
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -20,85 +18,126 @@
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/perak.css">
 
+  <!-- Add Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-
   <div class="site-wrap" id="home-section">
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-
-
+    
     <header class="site-navbar site-navbar-target" role="banner">
-
       <div class="container">
-        <div class="row align-items-center position-relative">
+ 
+          <!-- Desktop Navigation (only visible ≥ 992px) -->
 
-          <div class="col-3 ">
+          <div class="container d-flex justify-content-between align-items-center py-3">
+    
+            <!-- Logo -->
             <div class="site-logo">
-              <a href="index.html" class="font-weight-bold">
-                <img src="images/logo.jpg" alt="Image" class="img-fluid">
+              <a href="home.html">
+                <img src="images/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 50px;">
               </a>
             </div>
-          </div>
 
-          <div class="col-9  text-right">
-
-
-            <span class="d-inline-block d-lg-none"><a href="#"
-                class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span
-                  class="icon-menu h3 text-white"></span></a></span>
-
-
-
-            <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                <li class="active"><a href="home.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="trips.html" class="nav-link">States</a></li>
-                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <div class="d-flex justify-content-between align-items-center py-3">            
+              <!-- Burger icon (mobile only) -->
+              <div class="menu-toggle js-menu-toggle d-lg-none">
+                <i class="fas fa-bars fa-2x"></i>
+              </div>
+            </div>
+            
+            <!-- Unified Navigation Menu -->
+            <nav class="site-navigation desktop-nav">
+              <ul class="main-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                  <a href="#" class="dropdown-toggle">Trips <span style="font-size: 12px;">▼</span></a>
+                  <ul class="submenu">
+                    <li><a href="ipoh.html">Perak</a></li>
+                    <li><a href="penang.html">Penang</a></li>
+                    <li><a href="Sabah.html">Sabah</a></li>
+                  </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
+
+        
           </div>
-
-
+          
+          <!-- Mobile Toggle Icon (Only visible on small screen) -->
+          <!-- <div class="col-9 text-right d-lg-none">
+            <a href="#" class="menu-toggle js-menu-toggle py-5">
+              <i class="fas fa-bars fa-2x" style="color: black;"></i>
+            </a>
+          </div> -->
         </div>
       </div>
-
+    
+      <!-- Off-Canvas Navigation (Mobile only) -->
+      <nav class="site-navigation offcanvas-menu" id="main-nav">
+        <ul class="site-menu main-menu">
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-submenu">
+            <a href="#">Trips <i class="fas fa-angle-down"></i></a>
+            <ul class="submenu">
+              <li><a href="ipoh.html">Perak</a></li>
+              <li><a href="penang.html">Penang</a></li>
+              <li><a href="Sabah.html">Sabah</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    
 
-    <div class="ftco-blocks-cover-1">
-      <div class="site-section-cover overlay" style="background-image: url('images/ipoh/railway.jpg')">
+    <!-- Carousel for changing backgrounds (Images turned back from video) -->
+    <div class="carousel-container">
+      <!-- Ipoh Image -->
+      <div class="site-section-cover overlay" id="carousel-image" style="background-image: url('images/perak/ipoh.jpg');">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-5" data-aos="fade-up">
-              <span class="text-white d-block mb-4">PERAK</span>
-              <h1 class="mb-3 text-white">Discover the Beauty of IPOH</h1>
-              <p>From limestone caves and colonial streets to mouthwatering street food, 
-                Ipoh is where adventure and tradition meet. Plan your perfect getaway today!
-              </p>
-
+              <span class="text-white d-block mb-4" id="place-name">PERAK</span>
+              <h1 class="mb-3 text-white" id="place-title">Discover the Beauty of IPOH</h1>
+              <p id="place-description">From limestone caves and colonial streets to mouthwatering street food, Ipoh is where adventure and tradition meet. Plan your perfect getaway today!</p>
             </div>
           </div>
         </div>
+
+        <!-- Button that links to the respective destination page -->
+        <a href="https://www.tourismperakmalaysia.com/ipoh-old-town/" class="visit-btn" id="visit-btn" target="_blank">
+          Explore <i class="fas fa-arrow-right arrow"></i>
+        </a>
+      </div>
+
+      <!-- Navigation buttons -->
+      <button id="prev" class="carousel-btn">&#10094;</button>
+      <button id="next" class="carousel-btn">&#10095;</button>
+
+      <!-- Carousel Dots Navigation -->
+      <div class="carousel-dots-container">
+        <span class="dot" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
       </div>
     </div>
 
-
-    <div class="site-section">
-
+    <!-- Ipoh Description Section (Appears as you scroll) -->
+    <div class="site-section" data-aos="fade-up">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-md-12">
@@ -110,77 +149,113 @@
           </div>
         </div>
 
-<!-- Container Row: Text Left | Image Right -->
-<div class="row align-items-center mt-5 pt-5">
-  
-  <!-- TEXT COLUMN -->
-  <div class="col-lg-6">
-    <div data-aos="fade-right">
-      <h3 >Discover Ipoh</h3>
-      <p><strong>Ipoh</strong>, the capital city of Perak, Malaysia, is renowned for its blend of colonial charm and modern vibes. Once a booming tin mining town, it now stands as a cultural hub filled with stunning architecture, vibrant street art, and mouthwatering cuisine.</p>
+       
 
-      <h4>🌆 Famous Places</h4>
-      <ul>
-        <li><strong>Concubine Lane</strong> – A heritage alley filled with history, boutique shops, and snacks.</li>
-        <li><strong>Kellie's Castle</strong> – An unfinished mansion with spooky legends and beautiful views.</li>
-        <li><strong>Ipoh Railway Station</strong> – Known as the "Taj Mahal of Ipoh" for its stunning colonial architecture.</li>
-        <li><strong>Gua Tempurung</strong> – A majestic limestone cave perfect for adventurous spelunkers.</li>
-      </ul>
-    </div>
+        <div class="row align-items-center mt-5 pt-5">
+          <div class="col-lg-6">
+            <div data-aos="fade-right">
+              <h3>Discover Ipoh</h3>
+              <p><strong>Ipoh</strong>, the capital city of Perak, Malaysia, is renowned for its blend of colonial charm and modern vibes. Once a booming tin mining town, it now stands as a cultural hub filled with stunning architecture, vibrant street art, and mouthwatering cuisine.</p>
 
-    <div data-aos="fade-right">
-      <h4>🏛️ History</h4>
-      <p>Ipoh’s rise in the 19th century was fueled by the tin mining industry, attracting immigrants from China and India. Today, remnants of that colonial era can be seen in its historic buildings and multicultural traditions. The city is a blend of old-world charm and modern development.</p>
-
-      <h4>🍜 Famous Food </h4>
-      <ul>
-        <li><strong>Ipoh White Coffee</strong> – A rich, smooth brew made from roasted coffee beans served with condensed milk.</li>
-        <li><strong>Bean Sprout Chicken</strong> (Nga Choi Kai) – Tender chicken with crunchy bean sprouts and soy-based sauce.</li>
-        <li><strong>Salt-Baked Chicken</strong> – Wrapped in paper and baked in salt for a juicy flavor-packed dish.</li>
-        <li><strong>Chee Cheong Fun</strong> – Rice noodle rolls served with sweet or spicy sauce, popular in Ipoh markets.</li>
-      </ul>
-
-      <p><a href="contact.html" class="btn btn-primary py-3 px-4 my-4">Plan Your Trip</a></p>
-    </div>
-  </div>
-
-  <!-- IMAGE COLUMN -->
-  <div class="col-lg-6 text-center" data-aos="fade-up">
-    <img src="images/img_4.jpg" alt="Ipoh" class="img-fluid rounded">
-  </div>
-
-</div>
-
-    </div>
-
-
-    <div class="site-section py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <div class="heading-39101 mb-5">
-              <span class="backdrop">Story</span>
-              <span class="subtitle-39191">Discover Story</span>
-              <h3>Our Ipoh's Story</h3>
+              <h4>🌆 Famous Places</h4>
+              <ul>
+                <li><strong>Concubine Lane</strong> – A heritage alley filled with history, boutique shops, and snacks.</li>
+                <li><strong>Kellie's Castle</strong> – An unfinished mansion with spooky legends and beautiful views.</li>
+                <li><strong>Ipoh Railway Station</strong> – Known as the "Taj Mahal of Ipoh" for its stunning colonial architecture.</li>
+                <li><strong>Gua Tempurung</strong> – A majestic limestone cave perfect for adventurous spelunkers.</li>
+              </ul>
             </div>
-            <p>Once a quiet village, Ipoh transformed into one of the wealthiest towns in Malaysia during the tin mining boom.
-               The citys rich heritage, British colonial architecture, and natural attractions have made it a must-visit destination for both locals and international travelers.
-            </p>
-            <p>Today, Ipoh balances nostalgia and modernity, offering unforgettable culinary experiences and breathtaking historical sites. 
-              Whether you're wandering through its mural-filled streets or sipping white coffee at a kopitiam, Ipoh invites you to slow down and savor life.
-            </p>
+
+            <div data-aos="fade-right">
+              <h4>🏛️ History</h4>
+              <p>Ipoh’s rise in the 19th century was fueled by the tin mining industry, attracting immigrants from China and India. Today, remnants of that colonial era can be seen in its historic buildings and multicultural traditions. The city is a blend of old-world charm and modern development.</p>
+
+              <h4>🍜 Famous Food</h4>
+              <ul>
+                <li><strong>Ipoh White Coffee</strong> – A rich, smooth brew made from roasted coffee beans served with condensed milk.</li>
+                <li><strong>Bean Sprout Chicken</strong> (Nga Choi Kai) – Tender chicken with crunchy bean sprouts and soy-based sauce.</li>
+                <li><strong>Salt-Baked Chicken</strong> – Wrapped in paper and baked in salt for a juicy flavor-packed dish.</li>
+                <li><strong>Chee Cheong Fun</strong> – Rice noodle rolls served with sweet or spicy sauce, popular in Ipoh markets.</li>
+              </ul>
+
+              <p><a href="contact.html" class="btn btn-primary py-3 px-4 my-4">Plan Your Trip</a></p>
+            </div>
           </div>
-          <div class="col-md-6" data-aos="fade-right">
-            <img src="images/traveler.jpg" alt="Image" class="img-fluid">
+
+          <div class="col-lg-6 text-center" data-aos="fade-up">
+            <img src="images/perak/ipoh.jpg" alt="Ipoh" class="img-fluid rounded">
           </div>
         </div>
       </div>
-
-
-
-
     </div>
-    </footer>
+
+    <!-- News & Feeds Section -->
+    <div class="site-section bg-white" id="news-feed-section">
+      <div class="container">
+        <h3 class="text-center mb-5">📰 Latest News & Feeds</h3>
+        <div class="row">
+          <!-- Feed 1 -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+            <div class="card h-100 shadow-sm">
+              <img src="images/perak/ipoh.jpg" class="card-img-top" alt="Ipoh News">
+              <div class="card-body">
+                <h5 class="card-title">Visit Ipoh’s Hidden Gems</h5>
+                <p class="card-text">Explore lesser-known spots like cave temples, hot springs, and mural alleys that make Ipoh unique.</p>
+                <a href="https://www.tourismperakmalaysia.com/ipoh-old-town/" target="_blank" class="btn btn-outline-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feed 2 -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 shadow-sm">
+              <img src="images/perak/kampar.jpg" class="card-img-top" alt="Kampar Update">
+              <div class="card-body">
+                <h5 class="card-title">Kampar Adventure Trails</h5>
+                <p class="card-text">Discover new cycling and hiking routes in Kampar launched to promote eco-tourism and nature escapes.</p>
+                <a href="https://www.tourismperakmalaysia.com/our-destinations/districts/kampar/" target="_blank" class="btn btn-outline-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feed 3 -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 shadow-sm">
+              <img src="images/perak/pulaupangkor.jpg" class="card-img-top" alt="Pangkor News">
+              <div class="card-body">
+                <h5 class="card-title">Pulau Pangkor Beach Cleanup Drive</h5>
+                <p class="card-text">Local volunteers organized a cleanup event to preserve the beauty of Pangkor's shores for future visitors.</p>
+                <a href="https://www.tourismperakmalaysia.com/pangkor-island/" target="_blank" class="btn btn-outline-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Comment Section -->
+     <div class="site-section bg-light" id="comment-section">
+      <div class="container">
+        <h3 class="text-center mb-4">💬 Share Your Thoughts</h3>
+        <form id="comment-form" class="mb-4">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="username" placeholder="Your name" required>
+            </div>
+            <div class="form-group col-md-8">
+              <input type="text" class="form-control" id="comment" placeholder="Write a comment..." required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Post Comment</button>
+        </form>
+
+        <ul class="list-group" id="comment-list">
+          <!-- Comments will appear here -->
+        </ul>
+      </div>
+    </div>
 
   </div>
 
@@ -200,6 +275,78 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+  <script src="js/perak.js"></script>
+
+  <!-- <script>
+    let images = [
+      { img: 'images/perak/ipoh.jpg', title: 'Discover the Beauty of IPOH', description: 'From limestone caves and colonial streets to mouthwatering street food, Ipoh is where adventure and tradition meet. Plan your perfect getaway today!', link: 'https://www.tourismperakmalaysia.com/ipoh-old-town/' },
+      { img: 'images/perak/kampar.jpg', title: 'Discover the Beauty of KAMPAR', description: 'Kampar is a town known for its beautiful parks and historical significance. Explore its rivers, landscapes, and delicious local food.', link: 'https://www.tourismperakmalaysia.com/our-destinations/districts/kampar/' },
+      { img: 'images/perak/kualakangsar.jpg', title: 'Discover the Beauty of KUALA KANGSAR', description: 'Kuala Kangsar, the royal town of Perak, offers visitors a glimpse into Malaysia\'s royal history, with grand palaces and beautiful riverside views.', link: 'https://www.tourismperakmalaysia.com/kuala-kangsar/' },
+      { img: 'images/perak/pulaupangkor.jpg', title: 'Discover the Beauty of PULAU PANGKOR', description: 'Pulau Pangkor is a serene island with pristine beaches, crystal-clear waters, and rich marine life perfect for a peaceful getaway.', link: 'https://www.tourismperakmalaysia.com/pangkor-island/' }
+    ];
+
+    let currentIndex = 0;
+
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const carouselImage = document.getElementById('carousel-image');
+    const placeTitle = document.getElementById('place-title');
+    const placeDescription = document.getElementById('place-description');
+    const placeName = document.getElementById('place-name');
+    const visitBtn = document.getElementById('visit-btn');
+    const dots = document.querySelectorAll('.dot');
+
+    const changePlace = (index) => {
+      carouselImage.style.backgroundImage = `url(${images[index].img})`;
+      placeTitle.innerText = images[index].title;
+      placeDescription.innerText = images[index].description;
+      placeName.innerText = images[index].title.split(' ')[3].toUpperCase();
+      visitBtn.href = images[index].link;
+      setActiveDot(index); // Update the active dot
+    };
+
+    const setActiveDot = (index) => {
+      dots.forEach((dot, i) => {
+        dot.classList.remove('active');
+        if (i === index) {
+          dot.classList.add('active');
+        }
+      });
+    };
+
+    // Function to automatically slide the carousel
+    const autoSlide = () => {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+      changePlace(currentIndex);
+      setActiveDot(currentIndex); // Sync the active dot with the carousel slide
+    };
+
+    // Initialize with the first image and dot active
+    changePlace(currentIndex);
+    setActiveDot(currentIndex);
+
+    // Auto-slide every 3 seconds
+    setInterval(autoSlide, 3000);
+
+    // Add event listeners for left and right buttons
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+      changePlace(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+      changePlace(currentIndex);
+    });
+
+    // Event listener for dots
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        changePlace(currentIndex);
+      });
+    });
+  </script> -->
 
 </body>
 

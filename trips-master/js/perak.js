@@ -3,24 +3,28 @@ let images = [
         img: 'images/perak/ipoh.jpg', 
         title: 'Discover the Beauty of IPOH', 
         description: 'From limestone caves and colonial streets to mouthwatering street food, Ipoh is where adventure and tradition meet. Plan your perfect getaway today!', 
+        name: 'IPOH',
         link: 'https://www.tourismperakmalaysia.com/ipoh-old-town/' 
     },
     { 
         img: 'images/perak/kampar.jpg', 
         title: 'Discover the Beauty of KAMPAR', 
         description: 'Kampar is a town known for its beautiful parks and historical significance. Explore its rivers, landscapes, and delicious local food.', 
+        name: 'KAMPAR',
         link: 'https://www.tourismperakmalaysia.com/our-destinations/districts/kampar/' 
     },
     { 
         img: 'images/perak/kualakangsar.jpg', 
         title: 'Discover the Beauty of KUALA KANGSAR', 
         description: 'Kuala Kangsar, the royal town of Perak, offers visitors a glimpse into Malaysia\'s royal history, with grand palaces and beautiful riverside views.', 
+        name: 'KUALA KANGSAR',
         link: 'https://www.tourismperakmalaysia.com/kuala-kangsar/'
      },
     { 
         img: 'images/perak/pulaupangkor.jpg', 
         title: 'Discover the Beauty of PULAU PANGKOR', 
         description: 'Pulau Pangkor is a serene island with pristine beaches, crystal-clear waters, and rich marine life perfect for a peaceful getaway.', 
+        name: 'PULAU PANGKOR',
         link: 'https://www.tourismperakmalaysia.com/pangkor-island/' 
     }
   ];
@@ -40,7 +44,7 @@ let images = [
     carouselImage.style.backgroundImage = `url(${images[index].img})`;
     placeTitle.innerText = images[index].title;
     placeDescription.innerText = images[index].description;
-    placeName.innerText = images[index].title.split(' ')[3].toUpperCase();
+    placeName.innerText = images[index].name;
     visitBtn.href = images[index].link;
     setActiveDot(index); // Update the active dot
   };
@@ -65,8 +69,8 @@ let images = [
   changePlace(currentIndex);
   setActiveDot(currentIndex);
 
-  // Auto-slide every 3 seconds
-  setInterval(autoSlide, 3000);
+  // Auto-slide every 5 seconds
+  setInterval(autoSlide, 5000);
 
   // Add event listeners for left and right buttons
   prevBtn.addEventListener('click', () => {
@@ -85,4 +89,73 @@ let images = [
       currentIndex = index;
       changePlace(currentIndex);
     });
+  });
+
+  const commentForm = document.getElementById('comment-form');
+  const usernameInput = document.getElementById('username');
+  const commentInput = document.getElementById('comment');
+  const commentList = document.getElementById('comment-list');
+
+  // Load saved comments from localStorage
+  let comments = JSON.parse(localStorage.getItem('ipoh_comments')) || [];
+
+  function saveComments() {
+    localStorage.setItem('ipoh_comments', JSON.stringify(comments));
+  }
+
+  function renderComments() {
+    commentList.innerHTML = '';
+    comments.forEach((c, index) => {
+      const li = document.createElement('li');
+      li.className = 'list-group-item d-flex justify-content-between align-items-center flex-wrap';
+
+      li.innerHTML = `
+        <div style="flex: 1;">
+          <strong>${c.name}</strong>: <span class="comment-text">${c.text}</span>
+        </div>
+        <div>
+          <button class="btn btn-sm btn-warning mr-2 edit-btn" data-index="${index}">Edit</button>
+          <button class="btn btn-sm btn-danger delete-btn" data-index="${index}">Delete</button>
+        </div>
+      `;
+      commentList.appendChild(li);
+    });
+  }
+
+  // Initial render
+  renderComments();
+
+  // Add new comment
+  commentForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = usernameInput.value.trim();
+    const text = commentInput.value.trim();
+
+    if (!name || !text) return;
+
+    comments.push({ name, text });
+    saveComments();
+    renderComments();
+
+    // Clear form
+    usernameInput.value = '';
+    commentInput.value = '';
+  });
+
+  // Handle edit & delete
+  commentList.addEventListener('click', function(e) {
+    if (e.target.classList.contains('delete-btn')) {
+      const i = e.target.dataset.index;
+      comments.splice(i, 1);
+      saveComments();
+      renderComments();
+    } else if (e.target.classList.contains('edit-btn')) {
+      const i = e.target.dataset.index;
+      const newText = prompt('Edit comment:', comments[i].text);
+      if (newText !== null) {
+        comments[i].text = newText;
+        saveComments();
+        renderComments();
+      }
+    }
   });

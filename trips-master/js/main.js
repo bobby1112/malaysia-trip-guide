@@ -63,18 +63,59 @@ jQuery(document).ready(function($) {
 			}
 		})
 
-		$('body').on('click', '.js-menu-toggle', function(e) {
-			var $this = $(this);
-			e.preventDefault();
-
-			if ( $('body').hasClass('offcanvas-menu') ) {
+		// $('body').on('click', '.js-menu-toggle', function(e) {
+		// 	var $this = $(this);
+		// 	e.preventDefault(); // Prevents the link default behavior (e.g., jumping to top)
+		  
+		// 	if ($('body').hasClass('offcanvas-menu')) {
+		// 	  // Menu is open, so close it
+		// 	  $('body').removeClass('offcanvas-menu');
+		// 	  $this.removeClass('active');
+		// 	} else {
+		// 	  // Menu is closed, so open it
+		// 	  $('body').addClass('offcanvas-menu');
+		// 	  $this.addClass('active');
+		// 	}
+		//   });
+		
+		$(document).ready(function () {
+			let isHoveringToggle = false;
+			let isHoveringMenu = false;
+		  
+			function updateMenuState() {
+			  if (!isHoveringToggle && !isHoveringMenu) {
 				$('body').removeClass('offcanvas-menu');
-				$this.removeClass('active');
-			} else {
-				$('body').addClass('offcanvas-menu');
-				$this.addClass('active');
+			  }
 			}
-		}) 
+		  
+			$('.js-menu-toggle').on('mouseenter', function () {
+			  isHoveringToggle = true;
+			  $('body').addClass('offcanvas-menu');
+			}).on('mouseleave', function () {
+			  isHoveringToggle = false;
+			  setTimeout(updateMenuState, 100); // slight delay to allow smooth move
+			});
+		  
+			$('.site-navigation').on('mouseenter', function () {
+			  isHoveringMenu = true;
+			}).on('mouseleave', function () {
+			  isHoveringMenu = false;
+			  setTimeout(updateMenuState, 100); // allow time to return
+			});
+		  });
+		  
+		  $(document).ready(function () {
+			$('.js-menu-toggle').on('click', function (e) {
+			  e.preventDefault();
+			  $('body').toggleClass('offcanvas-menu');
+			});
+		  
+			$('.dropdown-toggle').on('click', function (e) {
+				e.preventDefault();
+				$(this).next('.submenu').slideToggle(200);
+			  });
+			  
+		  });
 
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
