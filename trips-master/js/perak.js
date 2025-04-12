@@ -164,16 +164,14 @@ let images = [
   //   }
   // });
 
-  // Get the comment form, inputs, and comment list
+ // Get the comment form, inputs, and comment list
 const commentForm = document.getElementById('comment-form');
 const usernameInput = document.getElementById('username');
 const commentInput = document.getElementById('comment');
 const commentList = document.getElementById('comment-list');
 
-// Determine the current page dynamically (based on URL or page identifier)
-const currentPage = window.location.pathname.split("/").pop().split(".")[0]; // e.g., "ipoh", "penang", "sabah"
-
 // Load comments from localStorage for the current page
+const currentPage = window.location.pathname.split("/").pop().split(".")[0]; // e.g., "ipoh", "penang", "sabah"
 let comments = JSON.parse(localStorage.getItem(currentPage + '_comments')) || [];
 
 // Function to save comments based on the current page
@@ -206,7 +204,7 @@ renderComments();
 
 // Add new comment
 commentForm.addEventListener('submit', function (e) {
-  e.preventDefault();
+  e.preventDefault();  // Prevent the page from reloading on form submit
   const name = usernameInput.value.trim();
   const text = commentInput.value.trim();
 

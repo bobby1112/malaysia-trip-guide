@@ -30,47 +30,66 @@
     <div class="site-wrap" id="home-section">
         <header class="site-navbar site-navbar-target" role="banner">
             <div class="container">
-
+       
                 <!-- Desktop Navigation (only visible ≥ 992px) -->
                 <div class="container d-flex justify-content-between align-items-center py-1">
-
-                    <!-- Logo -->
-                    <div class="site-logo">
-                        <a href="home.html">
-                            <img src="images/webpage/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 50px;">
-                        </a>
+          
+                  <!-- Logo -->
+                  <div class="site-logo">
+                    <a href="home.html">
+                      <img src="images/webpage/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 50px;">
+                    </a>
+                  </div>
+      
+                  <div class="d-flex justify-content-between align-items-center py-3">            
+                    <!-- Burger icon (mobile only) -->
+                    <div class="menu-toggle js-menu-toggle d-lg-none">
+                      <i class="fas fa-bars fa-2x"></i>
                     </div>
-
-                    <div class="d-flex justify-content-between align-items-center py-3">
-                        <!-- Burger icon (mobile only) -->
-                        <div class="menu-toggle js-menu-toggle d-lg-none">
-                            <i class="fas fa-bars fa-2x"></i>
-                        </div>
-                    </div>
-
-                    <!-- Unified Navigation Menu -->
-                    <nav class="site-navigation desktop-nav">
-                        <ul class="main-menu">
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li class="has-submenu">
-                                <a href="#" class="dropdown-toggle">Trips <span style="font-size: 12px;"></span></a>
-                                <ul class="submenu">
-                                    <li><a href="ipoh.html">Perak</a></li>
-                                    <li><a href="penang.html">Penang</a></li>
-                                    <li><a href="Sabah.html">Sabah</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                  </div>
+                  
+                  <!-- Unified Navigation Menu -->
+                  <nav class="site-navigation desktop-nav">
+                    <ul class="main-menu">
+                      <li><a href="home.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li class="has-submenu">
+                        <a href="#" class="dropdown-toggle">Trips <span style="font-size: 12px;"></span></a>
+                        <ul class="submenu">
+                          <li><a href="ipoh.html">Perak</a></li>
+                          <li><a href="penang.html">Penang</a></li>
+                          <li><a href="Sabah.html">Sabah</a></li>
                         </ul>
-                    </nav>
-
-
+                      </li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+      
+              
                 </div>
-
-        </header>
+              </div>
+            </div>
+            <!-- Off-Canvas Navigation (Mobile only) -->
+            <nav class="site-navigation offcanvas-menu" id="main-nav">
+              <ul class="site-menu main-menu">
+                <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                  <a href="#">Trips <i class="fas fa-angle-down"></i></a>
+                  <ul class="submenu">
+                    <li><a href="ipoh.html">Perak</a></li>
+                    <li><a href="penang.html">Penang</a></li>
+                    <li><a href="Sabah.html">Sabah</a></li>
+                  </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
 
         <div class="ftco-blocks-cover-1">
             <div class="site-section-cover overlay position-relative" style="background-color: #f0f0f0;">

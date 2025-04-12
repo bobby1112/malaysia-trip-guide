@@ -470,3 +470,24 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
 
 
 
+/* Carousel adjustments */
+.carousel-inner {
+  border-radius: 10px;  /* Rounded corners for the images */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;  /* Ensure images retain aspect ratio */
+  object-fit: cover;  /* Crop the image to fit if necessary */
+  border-radius: 10px;
+}
+
+/* Optional: Add some padding around the carousel */
+.carousel {
+  margin-top: 20px;
+}
+
+/* Optional: Add a fade effect for the carousel */
+.carousel-item {
+  transition: opacity 0.5s ease-in-out;
+}
