@@ -61,16 +61,42 @@
 
 
 
-            <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li class="active"><a href="trips.html" class="nav-link">Trips</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <nav class="site-navigation desktop-nav">
+              <ul class="main-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                  <a href="#" class="dropdown-toggle">Trips <span style="font-size: 12px;"></span></a>
+                  <ul class="submenu">
+                    <li><a href="ipoh.html">Perak</a></li>
+                    <li><a href="penang.html">Penang</a></li>
+                    <li><a href="Sabah.html">Sabah</a></li>
+                  </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
           </div>
+
+          <nav class="site-navigation offcanvas-menu" id="main-nav">
+            <ul class="site-menu main-menu">
+              <li class="active"><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="has-submenu">
+                <a href="#">Trips <i class="fas fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="ipoh.html">Perak</a></li>
+                  <li><a href="penang.html">Penang</a></li>
+                  <li><a href="Sabah.html">Sabah</a></li>
+                </ul>
+              </li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
 
 
         </div>

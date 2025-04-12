@@ -126,6 +126,17 @@ jQuery(document).ready(function($) {
 				}
 	    }
 		});
+
+		/* Enable pointer cursor and smoother touch response for submenu links */
+		$(document).ready(function () {
+			$('.has-submenu > a').on('touchstart click', function (e) {
+			  e.preventDefault();
+			  const $submenu = $(this).next('.submenu');
+			  $('.submenu').not($submenu).slideUp(); // Close others
+			  $submenu.slideToggle();
+			});
+		  });
+		  
 	}; 
 	siteMenuClone();
 
