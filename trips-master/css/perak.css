@@ -316,6 +316,49 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
   color: #f4b43a;
 }
 
+/* Adjust the height of the image flash container */
+/* Container for the image flash */
+.image-flash-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto; /* Center the container */
+  position: relative;
+  overflow: hidden;
+}
+
+/* The images will be stacked and transitioned */
+.image-flash {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 400%;
+  animation: imageFlash 16s infinite;
+}
+
+.image-flash img {
+  width: 25%; /* Each image takes 1/4 of the container width */
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Keyframes for the image transition (fade effect) */
+@keyframes imageFlash {
+  0% {
+    transform: translateX(0); /* Show first image */
+  }
+  25% {
+    transform: translateX(-25%); /* Move to second image */
+  }
+  50% {
+    transform: translateX(-50%); /* Move to third image */
+  }
+  75% {
+    transform: translateX(-75%); /* Move to fourth image */
+  }
+  100% {
+    transform: translateX(0); /* Go back to first image */
+  }
+}
+
 /* Hide .desktop-nav on mobile */
 @media (max-width: 991.98px) {
   .desktop-nav {
@@ -392,3 +435,38 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
   height: 200px;
   object-fit: cover;
 }
+
+.food-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+}
+
+.food-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.food-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.food-card img {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
