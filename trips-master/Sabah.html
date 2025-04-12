@@ -15,62 +15,15 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/rel.css">
   <link rel="stylesheet" href="css/sabah.css">
   <link rel="stylesheet" href="css/flexslider.css">
-  <link rel="stylesheet" href="css/menu.css">
-
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .site-navigation .site-menu {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+  <link rel="stylesheet" href="css/perak.css">
 
-  .site-navigation .site-menu li {
-    
-    text-align: left;
-    width: 100%;
-  }
-
-  .site-navigation .site-menu li a {
-    display: block;
-    padding: 8px 15px; /* 🔽 Reduce padding for tighter spacing */
-    font-size: 17px;
-    color: black;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-
-  .site-navigation .site-menu li a:hover {
-    background-color: #f0f0f0;
-  }
-
-  .site-navigation.offcanvas-menu {
-    background: #fff;
-    position: fixed;
-    top: 0;
-    right: 0; /* Align to the right */
-    width: 250px;
-    height: 100%;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-    z-index: 9999;
-  }
-
-  body.offcanvas-menu .site-navigation.offcanvas-menu {
-    transform: translateX(0);
-  }
-
-  </style>
-  
   <!-- Add Font Awesome CDN -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
@@ -78,122 +31,91 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-  <!--////////////////////////////////////////////////////////////////////Menu Bar////////////////////////////////////////////////////////////////-->
-  <!-- <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
-  </div> -->
+  <div class="site-wrap" id="home-section">
+    <header class="site-navbar site-navbar-target" role="banner">
+      <div class="container">
 
+        <!-- Desktop Navigation (only visible ≥ 992px) -->
+        <div class="container d-flex justify-content-between align-items-center py-1">
 
-<<<<<<< HEAD
-      <div class="site-navigation">
-        <div class="row align-item-center">
-          <div class="col-6 col-lg-5 text-start">
-            <a href="home.html" class="logo">Sterial
-              <!-- <img src="images/logo.png" alt="Image" class="img-responsive"> -->
+          <!-- Logo -->
+          <div class="site-logo">
+            <a href="home.html">
+              <img src="images/webpage/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 50px;">
             </a>
           </div>
-          <div class="col-lg-7 d-none d-lg-inline-block text-center nav-center-wrap">
-            <ul class="js-clone-nav  text-center site-menu p-0 m-0">
-              <li><a href="home.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li class="has-children">
-                <a href="Sabah.html">Trips</a>
-                <ul class="dropdown">
-                  <li><a href="penang.html">Penang</a></li>
-                  <li> <a href="ipoh.html">Perak</a> </li>
-                  <li class="active"><a href="Sabah.html">Sabah</a></li>
-                  <li><a href="#">Menu Three</a></li>
-=======
-    <div class="site-wrap" id="home-section">
-      <header class="site-navbar site-navbar-target" role="banner">
-        <div class="container">
-   
-            <!-- Desktop Navigation (only visible ≥ 992px) -->
-            <div class="container d-flex justify-content-between align-items-center py-1">
-      
-              <!-- Logo -->
-              <div class="site-logo">
-                <a href="home.html">
-                  <img src="images/webpage/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 50px;">
-                </a>
-              </div>
-  
-              <div class="d-flex justify-content-between align-items-center py-3">            
-                <!-- Burger icon (mobile only) -->
-                <div class="menu-toggle js-menu-toggle d-lg-none">
-                  <i class="fas fa-bars fa-2x"></i>
-                </div>
-              </div>
-              
-              <!-- Unified Navigation Menu -->
-              <nav class="site-navigation desktop-nav">
-                <ul class="main-menu">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li class="has-submenu">
-                    <a href="#" class="dropdown-toggle">Trips <span style="font-size: 12px;"></span></a>
-                    <ul class="submenu">
-                      <li><a href="ipoh.html">Perak</a></li>
-                      <li><a href="penang.html">Penang</a></li>
-                      <li><a href="Sabah.html">Sabah</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="contact.html">Contact</a></li>
->>>>>>> 829afaa7e354fac2726748026e098ac6bfaccf48
-                </ul>
-              </nav>
-  
-          
+
+          <div class="d-flex justify-content-between align-items-center py-3">
+            <!-- Burger icon (mobile only) -->
+            <div class="menu-toggle js-menu-toggle d-lg-none">
+              <i class="fas fa-bars fa-2x"></i>
             </div>
           </div>
-        </div>
-      
-        <!-- Off-Canvas Navigation (Mobile only) -->
-        <nav class="site-navigation offcanvas-menu" id="main-nav">
-          <ul class="site-menu main-menu">
-            <li class="active"><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="has-submenu">
-              <a href="#">Trips <i class="fas fa-angle-down"></i></a>
-              <ul class="submenu">
-                <li><a href="ipoh.html">Perak</a></li>
-                <li><a href="penang.html">Penang</a></li>
-                <li><a href="Sabah.html">Sabah</a></li>
-              </ul>
-            </li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      
 
-  <div class="hero overlay">
-    <div class="img-bg rellax">
-<<<<<<< HEAD
-      <img src="images/kotakinabalu.jpg" alt="Image" class="img-responsive">
-=======
-      <img src="images/webpage/kotakinabalu.jpg" alt="Image" class="img-fluid">
->>>>>>> 829afaa7e354fac2726748026e098ac6bfaccf48
-    </div>
-    <div class="container">
-      <div class="row align-items-center justify-content-start">
-        <div class="col-lg-6 mx-auto text-center">
-          <h1 class="heading" data-aos="fade-up">Contact</h1>
-          <p data-aos="fade-up">A small river named Duden flows by their place and supplies it with the necessary
-            regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <!-- Unified Navigation Menu -->
+          <nav class="site-navigation desktop-nav">
+            <ul class="main-menu">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="has-submenu">
+                <a href="#" class="dropdown-toggle">Trips <span style="font-size: 12px;"></span></a>
+                <ul class="submenu">
+                  <li><a href="ipoh.html">Perak</a></li>
+                  <li><a href="penang.html">Penang</a></li>
+                  <li><a href="Sabah.html">Sabah</a></li>
+                </ul>
+              </li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+
+        </div>
+      </div>
+  </div>
+
+  <!-- Off-Canvas Navigation (Mobile only) -->
+  <nav class="site-navigation offcanvas-menu" id="main-nav">
+    <ul class="site-menu main-menu">
+      <li class="active"><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="has-submenu">
+        <a href="#">Trips <i class="fas fa-angle-down"></i></a>
+        <ul class="submenu">
+          <li><a href="ipoh.html">Perak</a></li>
+          <li><a href="penang.html">Penang</a></li>
+          <li><a href="Sabah.html">Sabah</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <div class="ftco-blocks-cover-1">
+    <div class="site-section-cover overlay position-relative" style="background-color: #f0f0f0;">
+      <div class="img-bg rellax">
+        <img src="images/kotakinabalu.jpg" alt="Image" class="img-responsive">
+      </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-start">
+          <div class="col-lg-6 mx-auto text-center">
+            <h1 class="heading" data-aos="fade-up">Contact</h1>
+            <p data-aos="fade-up">A small river named Duden flows by their place and supplies it with the necessary
+              regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+
+
+
   <!--/////////////////////////////////////////////////////////////////////////////Menu Bar/////////////////////////////////////////////////////////////////////////-->
 
   <div class="site-section" id="intro">
@@ -587,7 +509,7 @@
 
 
 
-  
+
 
 
   <script src="js/jquery-3.3.1.min.js"></script>
