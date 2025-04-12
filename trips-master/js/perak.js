@@ -91,71 +91,150 @@ let images = [
     });
   });
 
-  const commentForm = document.getElementById('comment-form');
-  const usernameInput = document.getElementById('username');
-  const commentInput = document.getElementById('comment');
-  const commentList = document.getElementById('comment-list');
+  // const commentForm = document.getElementById('comment-form');
+  // const usernameInput = document.getElementById('username');
+  // const commentInput = document.getElementById('comment');
+  // const commentList = document.getElementById('comment-list');
 
-  // Load saved comments from localStorage
-  let comments = JSON.parse(localStorage.getItem('ipoh_comments')) || [];
+  // // Load saved comments from localStorage
+  // let ipoh_comments = JSON.parse(localStorage.getItem('ipoh_comments')) || [];
+  // let penang_comments = JSON.parse(localStorage.getItem('penang_comments')) || [];
+  // let sabah_comments = JSON.parse(localStorage.getItem('sabah_comments')) || [];
 
-  function saveComments() {
-    localStorage.setItem('ipoh_comments', JSON.stringify(comments));
-  }
+  // function saveComments() {
+  //   localStorage.setItem('ipoh_comments', JSON.stringify(comments));
+  //   localStorage.setItem('penang_comments', JSON.stringify(comments));
+  //   localStorage.setItem('sabah_comments', JSON.stringify(comments));
+  // }
 
-  function renderComments() {
-    commentList.innerHTML = '';
-    comments.forEach((c, index) => {
-      const li = document.createElement('li');
-      li.className = 'list-group-item d-flex justify-content-between align-items-center flex-wrap';
+  // function renderComments() {
+  //   commentList.innerHTML = '';
+  //   comments.forEach((c, index) => {
+  //     const li = document.createElement('li');
+  //     li.className = 'list-group-item d-flex justify-content-between align-items-center flex-wrap';
 
-      li.innerHTML = `
-        <div style="flex: 1;">
-          <strong>${c.name}</strong>: <span class="comment-text">${c.text}</span>
-        </div>
-        <div>
-          <button class="btn btn-sm btn-warning mr-2 edit-btn" data-index="${index}">Edit</button>
-          <button class="btn btn-sm btn-danger delete-btn" data-index="${index}">Delete</button>
-        </div>
-      `;
-      commentList.appendChild(li);
-    });
-  }
+  //     li.innerHTML = `
+  //       <div style="flex: 1;">
+  //         <strong>${c.name}</strong>: <span class="comment-text">${c.text}</span>
+  //       </div>
+  //       <div>
+  //         <button class="btn btn-sm btn-warning mr-2 edit-btn" data-index="${index}">Edit</button>
+  //         <button class="btn btn-sm btn-danger delete-btn" data-index="${index}">Delete</button>
+  //       </div>
+  //     `;
+  //     commentList.appendChild(li);
+  //   });
+  // }
 
-  // Initial render
+  // // Initial render
+  // renderComments();
+
+  // // Add new comment
+  // commentForm.addEventListener('submit', function(e) {
+  //   e.preventDefault();
+  //   const name = usernameInput.value.trim();
+  //   const text = commentInput.value.trim();
+
+  //   if (!name || !text) return;
+
+  //   comments.push({ name, text });
+  //   saveComments();
+  //   renderComments();
+
+  //   // Clear form
+  //   usernameInput.value = '';
+  //   commentInput.value = '';
+  // });
+
+  // // Handle edit & delete
+  // commentList.addEventListener('click', function(e) {
+  //   if (e.target.classList.contains('delete-btn')) {
+  //     const i = e.target.dataset.index;
+  //     comments.splice(i, 1);
+  //     saveComments();
+  //     renderComments();
+  //   } else if (e.target.classList.contains('edit-btn')) {
+  //     const i = e.target.dataset.index;
+  //     const newText = prompt('Edit comment:', comments[i].text);
+  //     if (newText !== null) {
+  //       comments[i].text = newText;
+  //       saveComments();
+  //       renderComments();
+  //     }
+  //   }
+  // });
+
+ // Get the comment form, inputs, and comment list
+const commentForm = document.getElementById('comment-form');
+const usernameInput = document.getElementById('username');
+const commentInput = document.getElementById('comment');
+const commentList = document.getElementById('comment-list');
+
+// Load comments from localStorage for the current page
+const currentPage = window.location.pathname.split("/").pop().split(".")[0]; // e.g., "ipoh", "penang", "sabah"
+let comments = JSON.parse(localStorage.getItem(currentPage + '_comments')) || [];
+
+// Function to save comments based on the current page
+function saveComments() {
+  localStorage.setItem(currentPage + '_comments', JSON.stringify(comments));
+}
+
+// Function to render comments for the current page
+function renderComments() {
+  commentList.innerHTML = '';
+  comments.forEach((c, index) => {
+    const li = document.createElement('li');
+    li.className = 'list-group-item d-flex justify-content-between align-items-center flex-wrap';
+
+    li.innerHTML = `
+      <div style="flex: 1;">
+        <strong>${c.name}</strong>: <span class="comment-text">${c.text}</span>
+      </div>
+      <div>
+        <button class="btn btn-sm btn-warning mr-2 edit-btn" data-index="${index}">Edit</button>
+        <button class="btn btn-sm btn-danger delete-btn" data-index="${index}">Delete</button>
+      </div>
+    `;
+    commentList.appendChild(li);
+  });
+}
+
+// Initial render for the current page
+renderComments();
+
+// Add new comment
+commentForm.addEventListener('submit', function (e) {
+  e.preventDefault();  // Prevent the page from reloading on form submit
+  const name = usernameInput.value.trim();
+  const text = commentInput.value.trim();
+
+  if (!name || !text) return;
+
+  // Add new comment to the correct page's comments array
+  comments.push({ name, text });
+  saveComments();
   renderComments();
 
-  // Add new comment
-  commentForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = usernameInput.value.trim();
-    const text = commentInput.value.trim();
+  // Clear the form
+  usernameInput.value = '';
+  commentInput.value = '';
+});
 
-    if (!name || !text) return;
-
-    comments.push({ name, text });
+// Handle edit & delete for the current page
+commentList.addEventListener('click', function (e) {
+  if (e.target.classList.contains('delete-btn')) {
+    const i = e.target.dataset.index;
+    comments.splice(i, 1);
     saveComments();
     renderComments();
+  } else if (e.target.classList.contains('edit-btn')) {
+    const i = e.target.dataset.index;
+    const newText = prompt('Edit comment:', comments[i].text);
 
-    // Clear form
-    usernameInput.value = '';
-    commentInput.value = '';
-  });
-
-  // Handle edit & delete
-  commentList.addEventListener('click', function(e) {
-    if (e.target.classList.contains('delete-btn')) {
-      const i = e.target.dataset.index;
-      comments.splice(i, 1);
+    if (newText !== null) {
+      comments[i].text = newText;
       saveComments();
       renderComments();
-    } else if (e.target.classList.contains('edit-btn')) {
-      const i = e.target.dataset.index;
-      const newText = prompt('Edit comment:', comments[i].text);
-      if (newText !== null) {
-        comments[i].text = newText;
-        saveComments();
-        renderComments();
-      }
     }
-  });
+  }
+});
