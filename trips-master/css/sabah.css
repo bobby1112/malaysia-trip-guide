@@ -1,36 +1,55 @@
-.image-stack img {
-  width: 170%;
+#intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+}
+
+.text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image {
+  flex-shrink: 0; 
+  position: relative;
+  width: 100%; 
   height: auto;
-  max-width: none;
-}
-
-@media (max-width: 768px) {
-  .image-stack img {
-    width: 100%;
-  }
-}
-
-.location-logo {
-  position: absolute;
-  top: 60%;
-  left: 155%;
-  width: 40px;
-  transform: translate(-50%, -50%);
-  z-index: 10;
+  margin-top: -40px;
+  margin-left: 0px;
 }
 
 .map-logo {
-  position: absolute;
-  top: 70%;
-  left: 60%;
-  width: 20%;
-  transform: translate(-50%, -50%);
-  z-index: 20;
+  position:relative;
+  width: 100%; 
+  height: auto;
+  max-width:100%;
+  margin-top: 0px; 
+  
 }
 
-#intro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Make the container full-width on mobile */
+    padding: 20px;
+  }
+  .image {
+    max-width: 100%; /* Make image take full width on smaller screens */
+    margin-bottom: 20px; /* Adds space below the image */
+  }
+
+  .map-logo {
+    max-width: 90% !important;
+    margin-top: 20px;
+  }
+
+  .text {
+    padding-left: 15px; /* Adds space from the left */
+    padding-right: 15px; /* Adds space from the right */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Add space above the text */
+  }
+
 }
+
 
