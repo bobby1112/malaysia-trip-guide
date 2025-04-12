@@ -1,8 +1,8 @@
 #intro {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; 
-  flex-wrap: wrap; 
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .text {
@@ -11,31 +11,35 @@
 }
 
 .image {
-  flex-shrink: 0; 
+  flex-shrink: 0;
   position: relative;
-  width: 100%; 
+  width: 100%;
   height: auto;
   margin-top: -40px;
   margin-left: 0px;
 }
 
 .map-logo {
-  position:relative;
-  width: 100%; 
+  position: relative;
+  width: 100%;
   height: auto;
-  max-width:100%;
-  margin-top: 0px; 
-  
+  max-width: 100%;
+  margin-top: 0px;
+
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 100%; /* Make the container full-width on mobile */
+    width: 100%;
+    /* Make the container full-width on mobile */
     padding: 20px;
   }
+
   .image {
-    max-width: 100%; /* Make image take full width on smaller screens */
-    margin-bottom: 20px; /* Adds space below the image */
+    max-width: 100%;
+    /* Make image take full width on smaller screens */
+    margin-bottom: 20px;
+    /* Adds space below the image */
   }
 
   .map-logo {
@@ -44,12 +48,38 @@
   }
 
   .text {
-    padding-left: 15px; /* Adds space from the left */
-    padding-right: 15px; /* Adds space from the right */
-    text-align: center; /* Center align text */
-    margin-top: 20px; /* Add space above the text */
+    padding-left: 15px;
+    /* Adds space from the left */
+    padding-right: 15px;
+    /* Adds space from the right */
+    text-align: center;
+    /* Center align text */
+    margin-top: 20px;
+    /* Add space above the text */
   }
 
+  .tab-content p,
+  .tab-content ul,
+  .tab-content li {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .tab-content .feature-list {
+    padding-left: 20px;
+    text-align: justify;
+  }
+
+  .tab-content .feature-list li {
+    margin-bottom: 15px;
+    list-style-type: disc;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .section-title.text-center h2 {
+    text-align: center;
+  }
+
+
 }
-
-
