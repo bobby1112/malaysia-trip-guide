@@ -23,65 +23,97 @@
   <link rel="stylesheet" href="css/perak.css">
   
    <!-- Add Font Awesome CDN -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  
+  <style>
+    .card {
+    transition: transform 0.3s ease;
+  }
 
+  .card:hover {
+    transform: translateY(-30px);
+  }
+
+.card-front, .card-back {
+  backface-visibility: hidden;
+}
+
+ .card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+}
+
+.card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 20px;
+  transform: rotateY(180deg);
+}  */
+
+
+</style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="site-wrap" id="home-section">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-
-
     <header class="site-navbar site-navbar-target" role="banner">
-      <!-- start here -->
-      <div class="container d-flex justify-content-between align-items-center py-1">
+      <div class="container">
+ 
+          <!-- Desktop Navigation (only visible ≥ 992px) -->
+          <div class="container d-flex justify-content-between align-items-center py-1">
     
-        <!-- Logo -->
-        <div class="site-logo">
-          <a href="home.html">
-            <img src="images/webpage/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 50px;">
-          </a>
-        </div>
+            <!-- Logo -->
+            <div class="site-logo">
+              <a href="home.html">
+                <img src="images/webpage/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 50px;">
+              </a>
+            </div>
 
-        <div class="d-flex justify-content-between align-items-center py-3">            
-          <!-- Burger icon (mobile only) -->
-          <div class="menu-toggle js-menu-toggle d-lg-none">
-            <i class="fas fa-bars fa-2x"></i>
-          </div>
-        </div>
-        
-        <!-- Unified Navigation Menu -->
-        <nav class="site-navigation desktop-nav">
-          <ul class="main-menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="has-submenu">
-              <a href="#" class="dropdown-toggle">Trips <span style="font-size: 12px;"></span></a>
-              <ul class="submenu">
-                <li><a href="ipoh.html">Perak</a></li>
-                <li><a href="penang.html">Penang</a></li>
-                <li><a href="Sabah.html">Sabah</a></li>
+            <div class="d-flex justify-content-between align-items-center py-3">            
+              <!-- Burger icon (mobile only) -->
+              <div class="menu-toggle js-menu-toggle d-lg-none">
+                <i class="fas fa-bars fa-2x"></i>
+              </div>
+            </div>
+            
+            <!-- Unified Navigation Menu -->
+            <nav class="site-navigation desktop-nav">
+              <ul class="main-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                  <a href="#" class="dropdown-toggle">Trips <span style="font-size: 12px;"></span></a>
+                  <ul class="submenu">
+                    <li><a href="ipoh.html">Perak</a></li>
+                    <li><a href="penang.html">Penang</a></li>
+                    <li><a href="Sabah.html">Sabah</a></li>
+                  </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
-            </li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+            </nav>
 
-    
+        
+          </div>
+          
+          <!-- Mobile Toggle Icon (Only visible on small screen) -->
+          <!-- <div class="col-9 text-right d-lg-none">
+            <a href="#" class="menu-toggle js-menu-toggle py-5">
+              <i class="fas fa-bars fa-2x" style="color: black;"></i>
+            </a>
+          </div> -->
+        </div>
       </div>
     
-
       <!-- Off-Canvas Navigation (Mobile only) -->
       <nav class="site-navigation offcanvas-menu" id="main-nav">
         <ul class="site-menu main-menu">
@@ -100,8 +132,8 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
     </header>
+
     <div class="ftco-blocks-cover-1">
       <div class="site-section-cover overlay" style="background-image: url('images/hero_1.jpg')">
         <div class="container">
@@ -139,6 +171,7 @@
       </div>
     </div>
 
+    
 
     <div class="site-section py-5">
       <div class="container">
@@ -163,7 +196,6 @@
 
 
     <div class="site-section">
-
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-10">
@@ -175,9 +207,53 @@
           </div>
         </div>
 
-
-        <div class="row">
-
+        <div class="row justify-content-center">
+          <!-- Member 1 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card text-center shadow-sm h-100">
+              <img src="images/person_1.jpg" class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px;" alt="Member 1">
+              <div class="card-body">
+                <h5 class="card-title">Member 1 Name</h5>
+                <p class="card-text">Role: UI/UX Designer</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Member 2 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card text-center shadow-sm h-100">
+              <img src="images/person_2.jpg" class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px;" alt="Member 2">
+              <div class="card-body">
+                <h5 class="card-title">Member 2 Name</h5>
+                <p class="card-text">Role: Frontend Developer</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Member 3 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card text-center shadow-sm h-100">
+              <img src="images/person_3.jpg" class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px;" alt="Member 3">
+              <div class="card-body">
+                <h5 class="card-title">Member 3 Name</h5>
+                <p class="card-text">Role: Backend Integrator</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Member 4 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card text-center shadow-sm h-100">
+              <img src="images/person_4.jpg" class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px;" alt="Member 4">
+              <div class="card-body">
+                <h5 class="card-title">Member 4 Name</h5>
+                <p class="card-text">Role: Project Coordinator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="person-29191 text-center">
               <img src="images/person_1.jpg" alt="Image" class="img-fluid mb-4">
@@ -193,9 +269,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6 mb-4">
+          <!-- <div class="col-lg-4 col-md-6 mb-4">
             <div class="person-29191 text-center">
               <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-4">
               <div class="px-4">
@@ -210,9 +286,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6 mb-4">
+          <!-- <div class="col-lg-4 col-md-6 mb-4">
             <div class="person-29191 text-center">
               <img src="images/person_3.jpg" alt="Image" class="img-fluid mb-4">
               <div class="px-4">
@@ -229,15 +305,10 @@
             </div>
           </div>
 
-        </div>
+        </div> -->
 
       </div>
     </div>
-
-
-
-
-
 
     <div class="site-section bg-image overlay" style="background-image: url('images/hero_1.jpg')">
       <div class="container">
@@ -253,7 +324,13 @@
       </div>
     </div>
 
-    <!--<footer class="site-footer bg-light">
+
+    
+  </div>
+</div>
+</div>
+
+    <footer class="site-footer bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
@@ -303,20 +380,8 @@
             </div>
           </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>-->
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>-->
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    <!--</p>
-            </div>
-          </div>
-
-        </div>
       </div>
-    </footer>-->
+    </footer>
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
