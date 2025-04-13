@@ -1,3 +1,12 @@
+.blog{
+  bottom: 100%;
+  margin-bottom:130px;
+}
+
+.listing-image {
+  height: 500px !important;
+}
+
 #intro {
   display: flex;
   justify-content: space-between;
@@ -25,8 +34,202 @@
   height: auto;
   max-width: 100%;
   margin-top: 0px;
-
 }
+
+/* Hero Section Styles */
+.ftco-blocks-cover-1 {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.site-section-cover.overlay {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.site-section-cover.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.site-section-cover .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Text Styling */
+.site-section-cover .heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.site-section-cover p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* Button Styling */
+.site-section-cover .btn-primary {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #FF5733;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.site-section-cover .btn-primary:hover {
+  background-color: #e04a2a;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .site-section-cover .heading {
+    font-size: 2.5rem;
+  }
+
+  .site-section-cover p {
+    font-size: 1rem;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('images/Sabah/image.jpg');
+  /* Replace with the correct image path */
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Semi-transparent overlay */
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content .intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Button Styling */
+.btn-primary {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #c04f29;
+}
+
+
+/* Video Player Styling */
+#videoPlayer {
+  display: none;
+  position: relative;
+  top: 330px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 100%;
+  max-width: 1000px;  /* Max width for larger screens */
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+}
+
+.video-player-content {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#videoPlayer video {
+  width: 100%;
+  height: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: -32px;
+  right: -12px;
+  color: rgb(14, 12, 12);
+  font-size: 45px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+video {
+  width: 100%;
+  /* Ensures the video is responsive */
+  height: auto;
+}
+
+/* Button Styling */
+.hero-section .btn-primary {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #c04f29;
+}
+
+
 
 @media (max-width: 768px) {
   .container {
@@ -80,6 +283,20 @@
   .section-title.text-center h2 {
     text-align: center;
   }
+
+  .listing-image {
+    height: 300px !important;
+  }
+
+  .listing-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+
+
+
 
 
 }

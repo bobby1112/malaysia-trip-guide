@@ -2,11 +2,13 @@
   position: relative;
   height: 500px;
   overflow: hidden;
+    color: #f4b43a;
 }
 
 .site-section-cover {
   background-size: cover;
   background-position: center;
+    color: #f4b43a;
 }
 
 .carousel-container {
@@ -175,8 +177,7 @@
   list-style: none;
 }
 
-.site-navigation .site-menu li {
-  
+.site-navigation .site-menu li {  
   text-align: left;
   width: 100%;
 }
@@ -188,6 +189,7 @@
   color: black;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  
 }
 
 .site-navigation .site-menu li a:hover {
@@ -226,6 +228,7 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .desktop-nav .main-menu > li {
@@ -233,7 +236,7 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
 }
 
 .desktop-nav .main-menu > li > a {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   color: #f4b43a;
   text-decoration: none;
