@@ -298,29 +298,6 @@
   color: #f17945 !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .hero {
   background-color: #000;
   background-size: cover;
@@ -331,7 +308,7 @@
   -o-object-fit: cover;
   object-fit: cover;
   height: 700px;
-  margin-top: 85px;
+  margin-top: 0px;
 }
 
 .hero img {

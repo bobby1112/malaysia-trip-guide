@@ -10,7 +10,7 @@
 }
 
 .listing-image {
-  height: 450px; /* or any fixed height */
+  height: 450px; 
 }
 
 .listing-image img {
@@ -81,9 +81,6 @@
   align-items: center;
   margin-top: -130px;
 }
-
-
-
 
 .listing-item {
   display: none; /* Hide all items by default */
