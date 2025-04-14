@@ -380,6 +380,46 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
   }
 }
 
+@media (max-width: 992px) {
+  /* Adjust padding for the container */
+  .site-section {
+    padding: 20px;
+  }
+
+  /* Reduce font size for headings and paragraphs on mobile */
+  h1, h2, h3, h4 {
+    font-size: 1.5rem; /* Decrease heading size */
+  }
+
+  p {
+    font-size: 1rem; /* Slightly smaller font size for paragraphs */
+    line-height: 1.6; /* Increase line height for better readability */
+  }
+
+  /* Add some margin to separate content blocks */
+  .site-section .container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust the container width for better mobile view */
+  .container {
+    max-width: 90%; /* Limit the width of content */
+    margin: 0 auto; /* Center the content */
+  }
+
+  /* Ensure the text doesn't run all the way to the edges */
+  .site-section h1, .site-section h2, .site-section p {
+    text-align: center; /* Center the text on smaller screens */
+  }
+
+  /* Adjust button size for mobile */
+  .btn {
+    font-size: 1.1rem;
+    padding: 12px 15px;
+  }
+}
+
 
 .menu-toggle {
   display: flex;
@@ -471,8 +511,6 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
   border-radius: 10px;
 }
 
-
-
 /* Carousel adjustments */
 .carousel-inner {
   border-radius: 10px;  /* Rounded corners for the images */
@@ -493,4 +531,63 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
 /* Optional: Add a fade effect for the carousel */
 .carousel-item {
   transition: opacity 0.5s ease-in-out;
+}
+
+/* Styling the social media icons */
+.social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #555;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;  /* Change color on hover */
+}
+
+/* Styling the cards to make them a bit larger */
+.card-body {
+  padding: 15px;
+}
+
+/* Increase card size for mobile responsiveness */
+.card {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+/* Adjusting the container */
+.row {
+  justify-content: center;
+}
+
+/* Social media icons are centered below the name */
+.card-body .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  background-color: #003366;  /* Dark blue background */
+  color: #fff;                /* White color for text/icon */
+  border: none;               /* Remove border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for depth */
+  z-index: 3;
+}
+
+#btn-back-to-top i {
+  color: #FFDD00;  /* Yellow arrow */
+}
+
+#btn-back-to-top:hover {
+  background-color: #00509E;  /* Lighter dark blue on hover */
+  color: #fff;                /* Maintain white icon on hover */
+}
+
+#btn-back-to-top:focus {
+  outline: none;  /* Remove focus outline */
 }
