@@ -3267,8 +3267,3 @@ div.cs-select span {
 .back-to-top:hover {
   background-color: #db8137;
 }
-
-.back-to-top.active {
-  opacity: 1;
-  visibility: visible;
-}
