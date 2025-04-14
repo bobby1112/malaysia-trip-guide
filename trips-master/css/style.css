@@ -3259,9 +3259,14 @@ div.cs-select span {
   font-size: 18px;
   cursor: pointer;
   opacity: 0;
-  visibility: visible;
+  visibility: hidden;
   transition: all 0.3s ease;
-  z-index: 999;
+  z-index: 9990;
+}
+
+.back-to-top.active {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .back-to-top:hover {
