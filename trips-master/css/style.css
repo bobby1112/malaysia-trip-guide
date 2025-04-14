@@ -622,7 +622,7 @@ h5,
   z-index: 1999;
   top: 0;
   width: 100%;
-  padding: 1rem;
+  padding:1rem;
   background: white;
 }
 
@@ -656,7 +656,7 @@ h5,
 }
 
 .site-navbar .site-logo a img {
-  width: 73px;
+  width: 70px;
 }
 
 @media (max-width: 991.98px) {
