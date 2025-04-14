@@ -16,6 +16,7 @@ $(document).ready(function () {
 	  $("html, body").animate({ scrollTop: 0 }, "slow");
 	});
   });
+
   
 
 // Get the state from the current page
