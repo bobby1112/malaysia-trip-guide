@@ -7,12 +7,10 @@
     transition: 0.5s;
 }
 
-/* filepath: c:\Users\DELL\Desktop\trips-master\css\style.css */
 #hotel-facilities .tab-content-container {
     position: relative;
     overflow: hidden;
     min-height: 100px;
-    /* Adjust based on your content */
 }
 
 #hotel-facilities .tab-content {
@@ -28,7 +26,6 @@
     position: relative;
 }
 
-
 #tabs {
     float: left;
     width: 100%;
@@ -36,7 +33,7 @@
 
 #tabs .tabs-nav {
     border-bottom: 1px solid #f0f0f0;
-    float: left;
+    float: right;
     width: 100%;
 }
 
@@ -55,6 +52,8 @@
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    margin-left: 70px;
+    
 }
 
 #tabs .tabs-nav>a>.icon {

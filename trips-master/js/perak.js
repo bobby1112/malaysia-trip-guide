@@ -1,5 +1,5 @@
 let images = [
-    { 
+    {
         img: 'images/perak/ipohlogo.jpg', 
         title: 'Discover the Beauty of IPOH', 
         description: 'From limestone caves and colonial streets to mouthwatering street food, Ipoh is where adventure and tradition meet. Plan your perfect getaway today!', 
@@ -44,7 +44,7 @@ let images = [
     carouselImage.style.backgroundImage = `url(${images[index].img})`;
     placeTitle.innerText = images[index].title;
     placeDescription.innerText = images[index].description;
-    placeName.innerText = images[index].name;
+    placeName.innerText = images[index].title.split(' ')[3].toUpperCase();
     visitBtn.href = images[index].link;
     setActiveDot(index); // Update the active dot
   };
@@ -69,8 +69,8 @@ let images = [
   changePlace(currentIndex);
   setActiveDot(currentIndex);
 
-  // Auto-slide every 5 seconds
-  setInterval(autoSlide, 5000);
+  // Auto-slide every 3 seconds
+  setInterval(autoSlide, 3000);
 
   // Add event listeners for left and right buttons
   prevBtn.addEventListener('click', () => {
