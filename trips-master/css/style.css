@@ -3245,7 +3245,6 @@ div.cs-select span {
 
 /* Back to Top function */
 .back-to-top {
-  content: "Back to Top";
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -3260,7 +3259,7 @@ div.cs-select span {
   font-size: 18px;
   cursor: pointer;
   opacity: 0;
-  visibility: hidden;
+  visibility: visible;
   transition: all 0.3s ease;
   z-index: 999;
 }
