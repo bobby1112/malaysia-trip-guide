@@ -425,130 +425,130 @@ $('.gallery-carousel').owlCarousel({
 	}
 });
 
-$(document).ready(function () {
-	$('.flexslider').flexslider({
-		animation: "slide",
-		controlNav: true,
-		directionNav: true,
-		slideshow: true,
-		slideshowSpeed: 4000,
-		animationSpeed: 600
-	});
+// $(document).ready(function () {
+// 	$('.flexslider').flexslider({
+// 		animation: "slide",
+// 		controlNav: true,
+// 		directionNav: true,
+// 		slideshow: true,
+// 		slideshowSpeed: 4000,
+// 		animationSpeed: 600
+// 	});
 
-	//Back to Top event handler
-	const backToTopButton = document.querySelector('.back-to-top');
+// 	//Back to Top event handler
+// 	const backToTopButton = document.querySelector('.back-to-top');
 
-	window.addEventListener('scroll', () => {
-		if (window.pageYOffset > 300) {
-			backToTopButton.classList.add('active');
-		} else {
-			backToTopButton.classList.remove('active');
-		}
-	});
+// 	window.addEventListener('scroll', () => {
+// 		if (window.pageYOffset > 300) {
+// 			backToTopButton.classList.add('active');
+// 		} else {
+// 			backToTopButton.classList.remove('active');
+// 		}
+// 	});
 
-	backToTopButton.addEventListener('click', (e) => {
-		e.preventDefault();
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth'
-		});
-	});
-});
+// 	backToTopButton.addEventListener('click', (e) => {
+// 		e.preventDefault();
+// 		window.scrollTo({
+// 			top: 0,
+// 			behavior: 'smooth'
+// 		});
+// 	});
+// });
 
 
-/*$(document).ready(function () {
-	// Get the button
-	var mybutton = $("#btn-back-to-top");
+// $(document).ready(function () {
+// 	// Get the button
+// 	var mybutton = $("#btn-back-to-top");
   
-	// When the user scrolls down 20px from the top of the document, show the button
-	$(window).on("scroll", function () {
-	  if ($(this).scrollTop() > 20) {
-		mybutton.fadeIn();
-	  } else {
-		mybutton.fadeOut();
-	  }
-	});
+// 	// When the user scrolls down 20px from the top of the document, show the button
+// 	$(window).on("scroll", function () {
+// 	  if ($(this).scrollTop() > 20) {
+// 		mybutton.fadeIn();
+// 	  } else {
+// 		mybutton.fadeOut();
+// 	  }
+// 	});
   
-	// When the user clicks on the button, scroll to the top of the document
-	mybutton.on("click", function () {
-	  $("html, body").animate({ scrollTop: 0 }, "slow");
-	});
-  });
+// 	// When the user clicks on the button, scroll to the top of the document
+// 	mybutton.on("click", function () {
+// 	  $("html, body").animate({ scrollTop: 0 }, "slow");
+// 	});
+//   });
   
 
-// Get the state from the current page
-const currentState = window.location.pathname.includes("ipoh") ? "ipoh" : 
-                     window.location.pathname.includes("penang") ? "penang" : 
-                     window.location.pathname.includes("Sabah") ? "Sabah" : null;
+// // Get the state from the current page
+// const currentState = window.location.pathname.includes("ipoh") ? "ipoh" : 
+//                      window.location.pathname.includes("penang") ? "penang" : 
+//                      window.location.pathname.includes("Sabah") ? "Sabah" : null;
 
-// Get the form elements
-const commentForm = document.getElementById('comment-form');
-const usernameInput = document.getElementById('username');
-const commentInput = document.getElementById('comment');
-const commentList = document.getElementById('comment-list');
+// // Get the form elements
+// const commentForm = document.getElementById('comment-form');
+// const usernameInput = document.getElementById('username');
+// const commentInput = document.getElementById('comment');
+// const commentList = document.getElementById('comment-list');
 
-// Load saved comments from localStorage based on the current state
-let comments = JSON.parse(localStorage.getItem(`${currentState}_comments`)) || [];
+// // Load saved comments from localStorage based on the current state
+// let comments = JSON.parse(localStorage.getItem(`${currentState}_comments`)) || [];
 
-// Function to save comments for the specific state
-function saveComments() {
-  localStorage.setItem(`${currentState}_comments`, JSON.stringify(comments));
-}
+// // Function to save comments for the specific state
+// function saveComments() {
+//   localStorage.setItem(`${currentState}_comments`, JSON.stringify(comments));
+// }
 
-// Function to render the comments
-function renderComments() {
-  commentList.innerHTML = '';  // Clear previous comments
-  comments.forEach((c, index) => {
-    const li = document.createElement('li');
-    li.className = 'list-group-item d-flex justify-content-between align-items-center flex-wrap';
+// // Function to render the comments
+// function renderComments() {
+//   commentList.innerHTML = '';  // Clear previous comments
+//   comments.forEach((c, index) => {
+//     const li = document.createElement('li');
+//     li.className = 'list-group-item d-flex justify-content-between align-items-center flex-wrap';
     
-    li.innerHTML = `
-      <div style="flex: 1;">
-        <strong>${c.name}</strong>: <span class="comment-text">${c.text}</span>
-      </div>
-      <div>
-        <button class="btn btn-sm btn-warning mr-2 edit-btn" data-index="${index}">Edit</button>
-        <button class="btn btn-sm btn-danger delete-btn" data-index="${index}">Delete</button>
-      </div>
-    `;
-    commentList.appendChild(li);
-  });
-}
+//     li.innerHTML = `
+//       <div style="flex: 1;">
+//         <strong>${c.name}</strong>: <span class="comment-text">${c.text}</span>
+//       </div>
+//       <div>
+//         <button class="btn btn-sm btn-warning mr-2 edit-btn" data-index="${index}">Edit</button>
+//         <button class="btn btn-sm btn-danger delete-btn" data-index="${index}">Delete</button>
+//       </div>
+//     `;
+//     commentList.appendChild(li);
+//   });
+// }
 
-// Initial render of comments
-renderComments();
+// // Initial render of comments
+// renderComments();
 
-// Add new comment
-commentForm.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const name = usernameInput.value.trim();
-  const text = commentInput.value.trim();
+// // Add new comment
+// commentForm.addEventListener('submit', function(e) {
+//   e.preventDefault();
+//   const name = usernameInput.value.trim();
+//   const text = commentInput.value.trim();
 
-  if (!name || !text) return;
+//   if (!name || !text) return;
 
-  comments.push({ name, text });
-  saveComments();
-  renderComments();
+//   comments.push({ name, text });
+//   saveComments();
+//   renderComments();
 
-  // Clear form
-  usernameInput.value = '';
-  commentInput.value = '';
-});
+//   // Clear form
+//   usernameInput.value = '';
+//   commentInput.value = '';
+// });
 
-// Handle edit & delete actions
-commentList.addEventListener('click', function(e) {
-  if (e.target.classList.contains('delete-btn')) {
-    const i = e.target.dataset.index;
-    comments.splice(i, 1);  // Remove the comment
-    saveComments();
-    renderComments();
-  } else if (e.target.classList.contains('edit-btn')) {
-    const i = e.target.dataset.index;
-    const newText = prompt('Edit comment:', comments[i].text);
-    if (newText !== null) {
-      comments[i].text = newText;  // Update the comment text
-      saveComments();
-      renderComments();
-    }
-  }
-});*/
+// // Handle edit & delete actions
+// commentList.addEventListener('click', function(e) {
+//   if (e.target.classList.contains('delete-btn')) {
+//     const i = e.target.dataset.index;
+//     comments.splice(i, 1);  // Remove the comment
+//     saveComments();
+//     renderComments();
+//   } else if (e.target.classList.contains('edit-btn')) {
+//     const i = e.target.dataset.index;
+//     const newText = prompt('Edit comment:', comments[i].text);
+//     if (newText !== null) {
+//       comments[i].text = newText;  // Update the comment text
+//       saveComments();
+//       renderComments();
+//     }
+//   }
+// });
