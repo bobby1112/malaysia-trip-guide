@@ -1,6 +1,6 @@
 let images = [
     {
-        img: 'images/perak/ipohlogo.jpg', 
+        img: 'images/perak/ipoh.jpg', 
         title: 'Discover the Beauty of IPOH', 
         description: 'From limestone caves and colonial streets to mouthwatering street food, Ipoh is where adventure and tradition meet. Plan your perfect getaway today!', 
         name: 'IPOH',

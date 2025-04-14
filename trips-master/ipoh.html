@@ -357,12 +357,12 @@
     <script src="js/perak.js"></script>
 
     <script>
-      let images = [
-        { img: 'images/perak/ipoh.jpg', title: 'Discover the Beauty of IPOH', description: 'From limestone caves and colonial streets to mouthwatering street food, Ipoh is where adventure and tradition meet. Plan your perfect getaway today!', link: 'https://www.tourismperakmalaysia.com/ipoh-old-town/' },
-        { img: 'images/perak/kampar.jpg', title: 'Discover the Beauty of KAMPAR', description: 'Kampar is a town known for its beautiful parks and historical significance. Explore its rivers, landscapes, and delicious local food.', link: 'https://www.tourismperakmalaysia.com/our-destinations/districts/kampar/' },
-        { img: 'images/perak/kualakangsar.jpg', title: 'Discover the Beauty of KUALA KANGSAR', description: 'Kuala Kangsar, the royal town of Perak, offers visitors a glimpse into Malaysia\'s royal history, with grand palaces and beautiful riverside views.', link: 'https://www.tourismperakmalaysia.com/kuala-kangsar/' },
-        { img: 'images/perak/pulaupangkor.jpg', title: 'Discover the Beauty of PULAU PANGKOR', description: 'Pulau Pangkor is a serene island with pristine beaches, crystal-clear waters, and rich marine life perfect for a peaceful getaway.', link: 'https://www.tourismperakmalaysia.com/pangkor-island/' }
-      ];
+    let images = [
+      { img: 'images/perak/ipoh.jpg', title: 'Discover the Beauty of IPOH', description: 'From limestone caves and colonial streets to mouthwatering street food, Ipoh is where adventure and tradition meet. Plan your perfect getaway today!', link: 'https://www.tourismperakmalaysia.com/ipoh-old-town/' },
+      { img: 'images/perak/kampar.jpg', title: 'Discover the Beauty of KAMPAR', description: 'Kampar is a town known for its beautiful parks and historical significance. Explore its rivers, landscapes, and delicious local food.', link: 'https://www.tourismperakmalaysia.com/our-destinations/districts/kampar/' },
+      { img: 'images/perak/kualakangsar.jpg', title: 'Discover the Beauty of KUALA KANGSAR', description: 'Kuala Kangsar, the royal town of Perak, offers visitors a glimpse into Malaysia\'s royal history, with grand palaces and beautiful riverside views.', link: 'https://www.tourismperakmalaysia.com/kuala-kangsar/' },
+      { img: 'images/perak/pulaupangkor.jpg', title: 'Discover the Beauty of PULAU PANGKOR', description: 'Pulau Pangkor is a serene island with pristine beaches, crystal-clear waters, and rich marine life perfect for a peaceful getaway.', link: 'https://www.tourismperakmalaysia.com/pangkor-island/' }
+    ];
 
       let currentIndex = 0;
 
@@ -418,14 +418,14 @@
         changePlace(currentIndex);
       });
 
-      // Event listener for dots
-      dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-          currentIndex = index;
-          changePlace(currentIndex);
-        });
+    // Event listener for dots
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        changePlace(currentIndex);
       });
-    </script>
+    });
+  </script>
 
 </body>
 
