@@ -245,7 +245,7 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
 }
 
 .desktop-nav .main-menu > li > a:hover {
-  color: #333;
+  color: #f55e12;
 }
 
 /* Dropdown hidden by default */
@@ -415,7 +415,7 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
 /* Adjust icon size */
 .menu-toggle i {
   font-size: 24px; /* try 24px, adjust as needed */
-  color: black;
+  color: rgb(225, 156, 44);
 }
 
 /* Comment Section */
