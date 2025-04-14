@@ -77,6 +77,7 @@ jQuery(document).ready(function ($) {
 		// 	  $this.addClass('active');
 		// 	}
 		//   });
+		  
 
 		$(document).ready(function () {
 			let isHoveringToggle = false;
