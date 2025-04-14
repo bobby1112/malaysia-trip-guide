@@ -456,7 +456,7 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function () {
+/*$(document).ready(function () {
 	// Get the button
 	var mybutton = $("#btn-back-to-top");
   
@@ -551,4 +551,4 @@ commentList.addEventListener('click', function(e) {
       renderComments();
     }
   }
-});
+});*/
