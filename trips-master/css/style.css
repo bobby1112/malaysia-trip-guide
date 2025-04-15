@@ -1161,6 +1161,7 @@ body.mobile-menu-open {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  color:white !important;
 }
 
 
