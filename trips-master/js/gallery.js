@@ -16,6 +16,11 @@ function filterImages(category, button = null) {
   setTimeout(initializeFavorites, 100);
 }
 
+function clearFavorites() {
+  localStorage.removeItem('favorites');
+  location.reload(); // Optional: Refresh the page to update the UI
+}
+
 function initializeFavorites() {
   let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
