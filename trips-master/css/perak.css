@@ -421,6 +421,7 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
 /* Comment Section */
 #comment-section {
   padding: 60px 0;
+  margin-bottom:-70px;
 }
 
 #comment-form input {
@@ -551,10 +552,12 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
 
 #btn-back-to-top {
   position: fixed;
-  font-size: 20px;
+  font-size: 35px;
+  width:80px;
+  height:70px;
   bottom: 20px; 
   right: 20px;
-  background-color: #003366;  /* Dark blue background */
+  background: rgb(164, 100, 43); /*Brown back to top button*/
   color: #fff;                /* White color for text/icon */
   border: none;               /* Remove border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for depth */
@@ -562,11 +565,11 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
 }
 
 #btn-back-to-top i {
-  color: #FFDD00;  /* Yellow arrow */
+  color: #edda34;  /* Yellow arrow */
 }
 
 #btn-back-to-top:hover {
-  background-color: #00509E;  /* Lighter dark blue on hover */
+  background-color: #d19945;  /* Lighter brown blue on hover */
   color: #fff;                /* Maintain white icon on hover */
 }
 

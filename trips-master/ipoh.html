@@ -290,7 +290,6 @@
               </div>
             </div>
 
-
             <!-- Feed 3 -->
             <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
               <div class="card h-100 shadow-sm">
@@ -308,38 +307,33 @@
           </div>
         </div>
       </div>
-
-      <!-- Back to Top
-      <a href="#" class="back-to-top" title="Back to Top">Back to Top </a> -->
-
-      <!-- Back to top button -->
-      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-        <i class="fas fa-arrow-up"></i>
-      </button>
-
-      <!-- Comment Section -->
-      <div class="container" id="jointrip">
-        <h3 class="text-center mb-4">💬 Share Your Thoughts</h3>
-        <form id="comment-form" class="mb-4">
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <input type="text" class="form-control" id="username" placeholder="Your name" required>
-            </div>
-            <div class="form-group col-md-8">
-              <input type="text" class="form-control" id="comment" placeholder="Write a comment..." required>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Post Comment</button>
-        </form>
-
-        <ul class="list-group" id="comment-list">
-          <!-- Comments will appear here -->
-        </ul>
-      </div>
     </div>
   </div>
 
-  <div style="background: rgb(57, 43, 38);" class="site-footer" >
+  <!-- Comment Section -->
+  <div class="site-section bg-light" id="comment-section">
+    <!-- Comment Section -->
+    <div class="container">
+      <h3 class="text-center mb-4">💬 Share Your Thoughts</h3>
+      <form id="comment-form" class="mb-4">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="username" placeholder="Your name" required>
+          </div>
+          <div class="form-group col-md-8">
+            <input type="text" class="form-control" id="comment" placeholder="Write a comment..." required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Post Comment</button>
+      </form>
+
+      <ul class="list-group" id="comment-list">
+        <!-- Comments will appear here -->
+      </ul>
+    </div>
+  </div>
+
+  <div style="background: rgb(57, 43, 38);" class="site-footer">
     <div class="container">
 
       <div class="row">
@@ -400,7 +394,12 @@
       </div>
     </div>
   </div>
-    
+
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.0.js"></script>
@@ -490,7 +489,7 @@
         changePlace(currentIndex);
       });
     });
-  </script> 
+  </script>
 
 </body>
 

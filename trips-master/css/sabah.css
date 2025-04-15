@@ -81,9 +81,10 @@
 .site-section-cover .btn-primary {
   padding: 12px 30px;
   font-size: 1rem;
-  background-color: #FF5733;
+  background-color: #e7775e;
   border: none;
   transition: all 0.3s ease;
+  height:60px;
 }
 
 .site-section-cover .btn-primary:hover {
@@ -147,18 +148,19 @@
 
 /* Button Styling */
 .btn-primary {
-  padding: 12px 20px;
-  font-size: 18px;
-  background-color: #FF5733;
+  padding: 12px 30px;
+  font-size: 20px;
+  background-color: #dbaa54;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   display: inline-block;
+  height:40px;
 }
 
 .btn-primary:hover {
-  background-color: #c04f29;
+  background-color: #ffa600;
 }
 
 
@@ -212,14 +214,15 @@ video {
 
 /* Button Styling */
 .hero-section .btn-primary {
-  padding: 12px 20px;
+  padding: 12px 80px;
   font-size: 18px;
-  background-color: #FF5733;
+  background-color: #eebc35;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   display: inline-block;
+  
 }
 
 .hero-section .btn-primary:hover {
