@@ -99,15 +99,16 @@
 
   <div class="ftco-blocks-cover-1">
     <div class="site-section-cover overlay" style="background-image: url('images/webpage/contactpage.jpeg')">
-      <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
-          <div class="col-md-5" data-aos="fade-up">
-            <h1 class="mb-3 text-white">Get In Touch</h1>
-            <p>Do you have any questions about the best travel destinations, hidden gems, or cultural experiences in
-              Malaysia? Feel free to reach out!
-              <br>Whether you're looking for travelling tips, local insights, or travel assistance, we're here to
-              help.
-            </p>
+      <div class="container h-100 position-relative">
+        <div class="row align-items-center justify-content-center text-center h-100">
+          <div class="col-md-5" data-aos="fade-up" style="transform: translateY(25%);">
+            <h1 class="mb-3 text-white"><strong>Get In Touch</strong></h1>
+            <h3 class="text-white" style="text-align:center;">
+              <p>Do you have any questions about the best travel destinations, hidden gems, or cultural experiences in
+                Malaysia? Feel free to reach out!
+                <br>Whether you're looking for travelling tips, local insights, or travel assistance, we're here to
+                help.
+            </h3>
           </div>
         </div>
       </div>
@@ -296,7 +297,7 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="widget">
-            <h3>About CTmarmot  <img src="images/webpage/marmot_logo.png" alt="Logo" style="max-height: 60px;"></h3>
+            <h3>About CTmarmot <img src="images/webpage/marmot_logo.png" alt="Logo" style="max-height: 60px;"></h3>
             <p>We inspire your next adventure across Malaysia—from tropical islands to vibrant festivals. Travel smart,
               travel local with CTmarmot.</p>
 
@@ -345,6 +346,9 @@
             </ul>
           </div>
         </div>
+        <div class="text-center py-3">
+          <p style="margin: 0; color: rgb(229, 143, 44);">&copy; 2025 CTmarmot. All rights reserved.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -355,7 +359,7 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
-  
+
 
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -377,24 +381,24 @@
 
   <script>
     $(document).ready(function () {
-    // Get the button
-    var mybutton = $("#btn-back-to-top");
+      // Get the button
+      var mybutton = $("#btn-back-to-top");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    $(window).on("scroll", function () {
-      if ($(this).scrollTop() > 20) {
-        mybutton.fadeIn();
-      } else {
-        mybutton.fadeOut();
-      }
-    });
+      // When the user scrolls down 20px from the top of the document, show the button
+      $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 20) {
+          mybutton.fadeIn();
+        } else {
+          mybutton.fadeOut();
+        }
+      });
 
-    // When the user clicks on the button, scroll to the top of the document
-    mybutton.on("click", function () {
-      $("html, body").animate({ scrollTop: 0 }, "slow");
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.on("click", function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+      });
     });
-  });
-</script>
+  </script>
 
 
 
