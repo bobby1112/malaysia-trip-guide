@@ -44,7 +44,7 @@ let images = [
     carouselImage.style.backgroundImage = `url(${images[index].img})`;
     placeTitle.innerText = images[index].title;
     placeDescription.innerText = images[index].description;
-    placeName.innerText = images[index].title.split(' ')[3].toUpperCase();
+    placeName.innerText = images[index].name.toUpperCase();
     visitBtn.href = images[index].link;
     setActiveDot(index); // Update the active dot
   };
