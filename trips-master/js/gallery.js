@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('favorites', JSON.stringify(favorites));
         alert('Added to favorites!');
       } else {
-        alert('Already in favorites!');
+        alert('Successfully removed!');
       }
 
       // Toggle heart icon to filled
