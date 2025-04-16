@@ -80,7 +80,7 @@
 .visit-btn {
   position: absolute;
   bottom: 15%;
-  right: 33%;
+  right: 45%;
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.8);
   color: black;
@@ -325,7 +325,13 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
   color: #f4b43a;
 }
 
+.highlighted-place {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /* Adjust the height of the image flash container */
+/* Container for the image flash */
 /* Container for the image flash */
 .image-flash-container {
   width: 100%;
@@ -338,15 +344,33 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
 /* The images will be stacked and transitioned */
 .image-flash {
   display: flex;
-  flex-wrap: nowrap;
-  width: 400%;
-  animation: imageFlash 5s infinite;
+  width: 400%; /* 4 images, each 100% */
+  animation: imageFlash 20s infinite; /* Adjust time to your preference */
 }
 
+/* Each image takes 1/4 of the container width */
 .image-flash img {
-  width: 25%; /* Each image takes 1/4 of the container width */
+  width: 25%;
   object-fit: cover;
-  transition: opacity 1s ease-in-out;
+}
+
+/* Keyframes for sliding the images */
+@keyframes imageFlash {
+  0% {
+    transform: translateX(0); /* Show first image */
+  }
+  25% {
+    transform: translateX(-25%); /* Slide to show second image */
+  }
+  50% {
+    transform: translateX(-50%); /* Slide to show third image */
+  }
+  75% {
+    transform: translateX(-75%); /* Slide to show fourth image */
+  }
+  100% {
+    transform: translateX(0); /* Reset to first image */
+  }
 }
 
 /* Hide .desktop-nav on mobile */

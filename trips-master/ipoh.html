@@ -174,12 +174,12 @@
 
             <h4>🌆 Famous Places</h4>
             <ul>
-              <li><strong>Concubine Lane</strong> – A heritage alley filled with history, boutique shops, and snacks.
+              <li ><span class="highlighted-place"><a href="https://exploreipoh.com/concubine-lane/">Concubine Lane</a></span> – A heritage alley filled with history, boutique shops, and snacks.
               </li>
-              <li><strong>Kellie's Castle</strong> – An unfinished mansion with spooky legends and beautiful views.</li>
-              <li><strong>Ipoh Railway Station</strong> – Known as the "Taj Mahal of Ipoh" for its stunning colonial
+              <li><span class="highlighted-place"><a href="https://www.malaysia.travel/explore/kellie-s-castle">Kellie's Castle</a></span> – An unfinished mansion with spooky legends and beautiful views.</li>
+              <li><span class="highlighted-place"><a href="https://www.easybook.com/en-my/train/station/ipoh-railway">Ipoh Railway Station</a></span> – Known as the "Taj Mahal of Ipoh" for its stunning colonial
                 architecture.</li>
-              <li><strong>Gua Tempurung</strong> – A majestic limestone cave perfect for adventurous spelunkers.</li>
+              <li><span class="highlighted-place"><a href="https://www.malaysia.travel/explore/tempurung-cave">Gua Tempurung</a></span> – A majestic limestone cave perfect for adventurous spelunkers.</li>
             </ul>
           </div>
         </div>
@@ -421,6 +421,30 @@
   <script src="js/localStorage.js"></script>
 
   <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.image-flash img');
+    const totalImages = images.length;
+
+    function changeImage() {
+      // Hide all images
+      images.forEach(img => img.style.opacity = 0);
+
+      // Show the current image
+      images[currentIndex].style.opacity = 1;
+
+      // Move to the next image
+      currentIndex = (currentIndex + 1) % totalImages;
+    }
+
+    // Change image every 4 seconds
+    setInterval(changeImage, 4000);
+
+    // Initial call to display the first image
+    changeImage();
+
+  </script>
+
+  <!-- <script>
     let images = [
       { img: 'images/perak/ipoh.jpg', title: 'Discover the Beauty of IPOH', description: 'From limestone caves and colonial streets to mouthwatering street food, Ipoh is where adventure and tradition meet. Plan your perfect getaway today!', link: 'https://www.tourismperakmalaysia.com/ipoh-old-town/' },
       { img: 'images/perak/kampar.jpg', title: 'Discover the Beauty of KAMPAR', description: 'Kampar is a town known for its beautiful parks and historical significance. Explore its rivers, landscapes, and delicious local food.', link: 'https://www.tourismperakmalaysia.com/our-destinations/districts/kampar/' },
@@ -489,7 +513,7 @@
         changePlace(currentIndex);
       });
     });
-  </script>
+  </script> -->
 
 </body>
 
