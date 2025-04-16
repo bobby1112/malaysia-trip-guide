@@ -706,6 +706,13 @@ h5,
   color: #efba6c !important;
 }
 
+.site-navbar .site-navigation .site-menu > li > a.active {
+  color: #0d66c5 !important; /* Highlighted color */
+  font-weight: bold;
+  border-bottom: 2px solid #efba6c; /* Optional underline */
+}
+
+
 .site-navbar .site-navigation .site-menu .has-children {
   position: relative;
 }

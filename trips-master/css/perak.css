@@ -248,6 +248,12 @@ body.offcanvas-menu .site-navigation.offcanvas-menu {
   color: #f55e12;
 }
 
+.desktop-nav .main-menu > li > a:active {
+  color: #efba6c !important; /* Highlighted color */
+  font-weight: bold;
+  border-bottom: 2px solid #efba6c; /* Optional underline */
+}
+
 /* Dropdown hidden by default */
 .main-menu .dropdown {
   display: none;
