@@ -310,7 +310,8 @@
 
 
         <!--Food-->
-        <div id="foods">
+        <div class="row px-3 mt-4 gap-3" id="foods">
+
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="listing-item" data-category="food" data-id="nasilemak" data-title="Nasi Lemak"
               data-image="images/Gallery/Food/nasilemak.png"
@@ -1068,6 +1069,20 @@
   <script src="js/gallery.js"></script>
   <script src="js/main.js"></script>
   <script src="js/localStorage.js"></script>
+
+  <script>
+    const navLinks = document.querySelectorAll('.site-navigation desktop-nav > li > a');
+  
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        navLinks.forEach(nav => nav.classList.remove('active'));
+  
+        // Add active class to the clicked link
+        this.classList.add('active');
+      });
+    });
+  </script>
+  
 
 
 

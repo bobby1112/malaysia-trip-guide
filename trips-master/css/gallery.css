@@ -45,15 +45,15 @@
 }
 
 .tab-button:hover {
-  background-color: #ddd;
+  background-color: #c5b93c;
 }
 
 #foods {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: -70px;
+  margin-top: -70px !important;
 }
 
 #festivals {
@@ -61,7 +61,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: -70px;
+  margin-top: -150px;
 }
 
 
@@ -70,7 +70,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: -80px;
+  margin-top: -70px;
 }
 
 
@@ -155,3 +155,38 @@
  
 }
 
+/* Add media query for mobile */
+@media (max-width: 767px) {
+  .tabs {
+    flex-wrap: wrap;
+    margin-top: -40px; /* Reduce negative margin */
+  }
+  
+  .tab-button {
+    width: 55%;
+    margin: 5px 0;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  #foods {
+    margin-top: -220px !important;
+    margin-bottom: 460px;
+  }
+
+  #festivals {
+    margin-top: -770px;
+    margin-bottom: 50px;
+  }  
+  
+  #species {
+    margin-top: -160px;
+    margin-bottom: 100px;
+  }  
+  
+  #islands {
+    margin-top: -350px;
+    margin-bottom: 100px;
+  }
+
+}

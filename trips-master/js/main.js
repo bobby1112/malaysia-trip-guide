@@ -1,3 +1,4 @@
+  // Get all top-level nav links
 AOS.init({
 	duration: 800,
 	easing: 'slide',
