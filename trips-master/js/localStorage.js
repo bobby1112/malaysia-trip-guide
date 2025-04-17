@@ -95,4 +95,3 @@ commentList.addEventListener('click', function(e) {
     }
   }
 });
-

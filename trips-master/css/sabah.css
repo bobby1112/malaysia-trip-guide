@@ -1,5 +1,5 @@
 #post {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .listing-image {
@@ -293,27 +293,5 @@ video {
     height: 300px;
     object-fit: cover;
   }
-
-  /* Comment section */
-  #comment-section {
-    padding: 60px 0;
-    position: fixed
-  }
-
-  #comment-form input {
-    height: 30px;
-  }
-
-  #comment-form button {
-    height: 50px;
-    padding: 0 30px;
-  }
-
-  #comment-list .list-group-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-  }
-
 
 }
