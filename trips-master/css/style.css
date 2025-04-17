@@ -622,7 +622,7 @@ h5,
   z-index: 1999;
   top: 0;
   width: 100%;
-  padding:1rem;
+  padding: 1rem;
   background: rgb(52, 41, 37);
 }
 
@@ -706,10 +706,12 @@ h5,
   color: #efba6c !important;
 }
 
-.site-navbar .site-navigation .site-menu > li > a.active {
-  color: #0d66c5 !important; /* Highlighted color */
+.site-navbar .site-navigation .site-menu>li>a.active {
+  color: #0d66c5 !important;
+  /* Highlighted color */
   font-weight: bold;
-  border-bottom: 2px solid #efba6c; /* Optional underline */
+  border-bottom: 2px solid #efba6c;
+  /* Optional underline */
 }
 
 
@@ -1168,7 +1170,7 @@ body.mobile-menu-open {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  color:white !important;
+  color: white !important;
 }
 
 
@@ -1807,6 +1809,7 @@ body.mobile-menu-open {
   margin-top: -70px;
   position: static;
 }
+
 
 .ftco-cover-1 {
   background-size: cover;
@@ -3255,7 +3258,8 @@ div.cs-select span {
 /*Footer*/
 .site-footer {
   padding: 60px 0;
-  background-color: #fff8e1; /* optional: soft beige */
+  background-color: #fff8e1;
+  /* optional: soft beige */
   color: #eaa31f;
   margin-top: 80px;
 }
@@ -3281,11 +3285,12 @@ div.cs-select span {
 }
 
 .site-footer ul li a:hover {
-  color: #ff5722; /* accent hover color */
+  color: #ff5722;
+  /* accent hover color */
 }
 
 @media (max-width: 767px) {
-  .site-footer .row > div {
+  .site-footer .row>div {
     margin-bottom: 30px;
   }
 }
@@ -3304,17 +3309,16 @@ div.cs-select span {
 }
 
 .footer-social-icons li a:hover {
-  color: #ff6600; /* Accent hover color */
+  color: #ff6600;
+  /* Accent hover color */
 }
 
 .site-footer h3,
 .site-footer h5 {
-  color: #e1771a; /* Change to any color you like */
+  color: #e1771a;
+  /* Change to any color you like */
 }
 
-#jointrip{
+#jointrip {
   margin-bottom: -80px;
 }
-
-
-
