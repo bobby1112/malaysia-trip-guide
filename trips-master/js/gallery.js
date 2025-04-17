@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //Load saved favorites, if no saved favorites, them assign with empty array
   let favorites = JSON.parse(localStorage.getItem('favorites')) || []; 
 
-  //Get image data (URL, titles, description)
+  //Get image data (URL, title description)
   buttons.forEach(button => {
     const item = button.closest('.listing-item');
     const image = item.querySelector('img')?.src; 
@@ -124,8 +124,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //Clear all the favourite item in local storage
-function clearFavorites() {
+document.getElementById('clear-storage-btn').addEventListener('click', function() {
   localStorage.removeItem('favorites');
   location.reload();
-}
+});
 
