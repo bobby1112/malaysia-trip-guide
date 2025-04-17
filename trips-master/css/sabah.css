@@ -294,4 +294,12 @@ video {
     object-fit: cover;
   }
 
+  @media (max-width: 992px) {
+
+    #videoPlayer{
+      margin-bottom:300px;
+    }
+  }
+
+
 }
