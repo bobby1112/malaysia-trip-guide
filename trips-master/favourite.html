@@ -198,43 +198,6 @@
     <script src="js/gallery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/localStorage.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-        const container = document.getElementById('favorites-container');
-
-        if (favorites.length === 0) {
-          container.innerHTML = '<p class="text-center">No favorites yet!</p>';
-          return;
-        }
-
-        favorites.forEach(item => {
-          if (!item.image || !item.title || !item.description) return; // skip broken data
-
-          const image = `<img src="${item.image}" alt="" class="img-fluid">`;
-          const title = `<h2>${item.title}</h2>`;
-          const description = `<p>${item.description}</p>`;
-
-          const card = `
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="listing-item">
-        <div class="listing-image">
-          ${image}
-        </div>
-        <div class="listing-item-content">
-          ${title}
-          ${description}
-        </div>
-      </div>
-    </div>`;
-
-          container.insertAdjacentHTML('beforeend', card);
-        });
-
-      });
-    </script>
-
   </div>
 </body>
 
