@@ -172,14 +172,11 @@ if (typeof(Storage) !== "undefined") {
         renderComments();
       }
     }
-<<<<<<< HEAD
+
   });
 
 } else {
   // Web Storage not supported
   alert("Sorry! Your browser does not support Web Storage. Comments will not be saved.");
 }
-=======
-  }
-});
->>>>>>> 10c13aad0cc34c693d73764334efe5eb7d787b3b
+
