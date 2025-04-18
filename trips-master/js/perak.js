@@ -70,7 +70,7 @@ let images = [
   setActiveDot(currentIndex);
 
   // Auto-slide every 3 seconds
-  setInterval(autoSlide, 3000);
+  setInterval(autoSlide, 5000);
 
   // Add event listeners for left and right buttons
   prevBtn.addEventListener('click', () => {
